@@ -127,8 +127,9 @@ dist
 .pnp.*
 
 # konk
-data
-src
-nodemon.json
-package-lock.json
-package.json
+
+*
+!src/
+!src/**/
+!src/**/**/
+!src/**/**/rest.http
