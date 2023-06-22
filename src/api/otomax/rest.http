@@ -1,5 +1,3 @@
-
-
 ### Data transaksi
 GET https://localhost/api/otomax/transaksi
 
