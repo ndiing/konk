@@ -49,5 +49,5 @@ GET http://localhost/api/center/logout?_id={{whatsapp_username}}
 ### send
 GET http://localhost/api/center/send
 ?_id={{whatsapp_username}}
-&penerima=
-&pesan=
+&penerima=6281935155404
+&pesan=pesan
