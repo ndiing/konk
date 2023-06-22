@@ -129,6 +129,8 @@ dist
 # konk
 
 *
+!test/
+!test/*
 !.gitattributes
 !.gitignore
 !src/
