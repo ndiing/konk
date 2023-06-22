@@ -1,0 +1,937 @@
+
+
+### Data transaksi
+GET https://localhost/api/otomax/transaksi
+
+### Data inbox
+GET https://localhost/api/otomax/inbox
+
+### Data outbox
+GET https://localhost/api/otomax/outbox
+
+### Data mutasi
+GET https://localhost/api/otomax/mutasi
+
+### Data operator
+GET https://localhost/api/otomax/operator
+
+### Data produk
+GET https://localhost/api/otomax/produk
+
+### Data level
+GET https://localhost/api/otomax/level
+
+### Data reseller
+GET https://localhost/api/otomax/reseller
+
+### Data reseller/downline
+GET https://localhost/api/otomax/reseller/downline
+
+### Data pengirim
+GET https://localhost/api/otomax/pengirim
+
+### Data parameter
+GET https://localhost/api/otomax/parameter
+
+
+
+
+
+### Aktifkan downline/reseller
+POST https://localhost/api/otomax/inbox/aktifkan-dl
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Batalkan transaksi yang belum diproses
+POST https://localhost/api/otomax/inbox/batal-transaksi
+Content-Type: application/json
+
+{
+    "trxid": "1",
+    "pin": "1234"
+}
+
+### Cancel balance transfer
+POST https://localhost/api/otomax/inbox/batal-transfer-saldo
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "jumlah": "100000",
+    "pin": "1234"
+}
+
+### Cek harga produk
+POST https://localhost/api/otomax/inbox/cek-harga
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1"
+}
+
+### Check downline's markup
+POST https://localhost/api/otomax/inbox/cek-markup
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Check product markup
+POST https://localhost/api/otomax/inbox/cek-markup-produk
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "kodeproduk": "AIGO1",
+    "pin": "1234"
+}
+
+### Check all product markups
+POST https://localhost/api/otomax/inbox/cek-markup-produk2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Cek N (lihat Setting.LimitCekMutasi) mutasi saldo/deposit terakhir
+POST https://localhost/api/otomax/inbox/cek-mutasi
+Content-Type: application/json
+
+{}
+
+### Cek mutasi saldo terakhir, khusus manual, tiket, dan transfer saldo
+POST https://localhost/api/otomax/inbox/cek-mutasi2
+Content-Type: application/json
+
+{}
+
+### Check current OID for OtomaX HTH
+POST https://localhost/api/otomax/inbox/cek-oid
+Content-Type: application/json
+
+{
+    "pin": "1234"
+}
+
+### Cek saldo akhir
+POST https://localhost/api/otomax/inbox/cek-saldo
+Content-Type: application/json
+
+{
+    "pin": "1234"
+}
+
+### Cek saldo downline
+POST https://localhost/api/otomax/inbox/cek-saldo-dl
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002"
+}
+
+### Cek status transaksi
+POST https://localhost/api/otomax/inbox/cek-status-transaksi
+Content-Type: application/json
+
+{
+    "nomor tujuan": "081935155404"
+}
+
+### Cek status transaksi
+POST https://localhost/api/otomax/inbox/cek-status-transaksi2
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404"
+}
+
+### Cek status transaksi
+POST https://localhost/api/otomax/inbox/cek-status-transaksi3
+Content-Type: application/json
+
+{
+    "tanggal": "17",
+    "tujuan": "081935155404"
+}
+
+### Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir
+POST https://localhost/api/otomax/inbox/cek-transaksi-akhir
+Content-Type: application/json
+
+{}
+
+### Daftarkan downline/reseller baru
+POST https://localhost/api/otomax/inbox/daftar-dl
+Content-Type: application/json
+
+{
+    "nama": "Ridho",
+    "alamat": "Pacitan",
+    "nomorhp": "081935155404",
+    "pin": "1234"
+}
+
+### Daftarkan downline/reseller baru
+POST https://localhost/api/otomax/inbox/daftar-dl2
+Content-Type: application/json
+
+{
+    "nama": "Ridho",
+    "alamat": "Pacitan",
+    "nomorhp": "081935155404",
+    "markup": "100",
+    "pin": "1234"
+}
+
+### Daftarkan downline/reseller baru
+POST https://localhost/api/otomax/inbox/daftar-dl3
+Content-Type: application/json
+
+{
+    "nama": "Ridho",
+    "alamat": "Pacitan",
+    "nomorhp": "081935155404",
+    "kodelevel": "A",
+    "pin": "1234"
+}
+
+### Registration of non member
+POST https://localhost/api/otomax/inbox/daftar-non-member
+Content-Type: application/json
+
+{
+    "name": "Ridho",
+    "address": "Pacitan",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe GTalk
+POST https://localhost/api/otomax/inbox/hapus-gtalk
+Content-Type: application/json
+
+{
+    "email": "ndiing.inc@gmail.com",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe GTalk untuk downline
+POST https://localhost/api/otomax/inbox/hapus-gtalk2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "email": "ndiing.inc@gmail.com",
+    "pin": "1234"
+}
+
+### Delete product markup
+POST https://localhost/api/otomax/inbox/hapus-markup-produk
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Delete product markup
+POST https://localhost/api/otomax/inbox/hapus-markup-produk2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Delete product markup
+POST https://localhost/api/otomax/inbox/hapus-markup-produk3
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe SMS
+POST https://localhost/api/otomax/inbox/hapus-nomor
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe SMS
+POST https://localhost/api/otomax/inbox/hapus-nomor2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Hapus nomor WA
+POST https://localhost/api/otomax/inbox/hapus-wa
+Content-Type: application/json
+
+{
+    "nomor": "081935155404",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe YM
+POST https://localhost/api/otomax/inbox/hapus-ym
+Content-Type: application/json
+
+{
+    "yahooid": "ndiing.inc@yahoo.co.id",
+    "pin": "1234"
+}
+
+### Hapus pengirim tipe YM dari downline
+POST https://localhost/api/otomax/inbox/hapus-ym2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "yahooid": "ndiing.inc@yahoo.co.id",
+    "pin": "1234"
+}
+
+### Cek laporan mutasi saldo per tanggal
+POST https://localhost/api/otomax/inbox/laporan-mutasi
+Content-Type: application/json
+
+{
+    "tanggal": "17"
+}
+
+### Cek laporan transaksi per tanggal
+POST https://localhost/api/otomax/inbox/laporan-transaksi
+Content-Type: application/json
+
+{
+    "tanggal": "17"
+}
+
+### View gift list
+POST https://localhost/api/otomax/inbox/lihat-hadiah-poin
+Content-Type: application/json
+
+{}
+
+### Lihat daftar downline
+POST https://localhost/api/otomax/inbox/list-dl
+Content-Type: application/json
+
+{}
+
+### Lihat daftar downline dari downline (sub-downline)
+POST https://localhost/api/otomax/inbox/list-dl2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002"
+}
+
+### Lihat daftar pengirim semua tipe
+POST https://localhost/api/otomax/inbox/list-pengirim
+Content-Type: application/json
+
+{}
+
+### Lihat daftar pengirim tipe GTalk
+POST https://localhost/api/otomax/inbox/list-pengirim-gtalk
+Content-Type: application/json
+
+{}
+
+### Lihat daftar pengirim tipe GTalk untuk downline
+POST https://localhost/api/otomax/inbox/list-pengirim-gtalk2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002"
+}
+
+### Lihat daftar pengirim tipe SMS
+POST https://localhost/api/otomax/inbox/list-pengirim-sms
+Content-Type: application/json
+
+{}
+
+### Lihat daftar pengirim tipe SMS dari downline
+POST https://localhost/api/otomax/inbox/list-pengirim-sms2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002"
+}
+
+### Lihat daftar pengirim tipe YM
+POST https://localhost/api/otomax/inbox/list-pengirim-ym
+Content-Type: application/json
+
+{}
+
+### Lihat daftar pengirim tipe YM dari downline
+POST https://localhost/api/otomax/inbox/list-pengirim-ym2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002"
+}
+
+### Non-aktifkan downline/reseller
+POST https://localhost/api/otomax/inbox/non-aktifkan-dl
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Reset pin member
+POST https://localhost/api/otomax/inbox/reset-pin
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe GTalk
+POST https://localhost/api/otomax/inbox/tambah-gtalk
+Content-Type: application/json
+
+{
+    "email": "ndiing.inc@gmail.com",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe GTalk untuk downline
+POST https://localhost/api/otomax/inbox/tambah-gtalk2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "email": "ndiing.inc@gmail.com",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe SMS
+POST https://localhost/api/otomax/inbox/tambah-nomor
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe SMS untuk downline
+POST https://localhost/api/otomax/inbox/tambah-nomor2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Tambah nomor WA
+POST https://localhost/api/otomax/inbox/tambah-wa
+Content-Type: application/json
+
+{
+    "number": "081935155404",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe YM
+POST https://localhost/api/otomax/inbox/tambah-ym
+Content-Type: application/json
+
+{
+    "yahooid": "ndiing.inc@yahoo.co.id",
+    "pin": "1234"
+}
+
+### Tambah pengirim tipe YM untuk downline
+POST https://localhost/api/otomax/inbox/tambah-ym2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "yahooid": "ndiing.inc@yahoo.co.id",
+    "pin": "1234"
+}
+
+
+
+
+
+
+### Tiket Deposit
+POST https://localhost/api/otomax/inbox/tiket-deposit
+Content-Type: application/json
+
+{
+    "jumlah": "100000",
+    "pin": "1234"
+}
+
+
+
+
+
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi10
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi11
+Content-Type: application/json
+
+{
+    "nominal": "10",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi12
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "nominal": "10",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi13
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "kodeproduk": "AIGO1",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi14
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "counter": "1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi15
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "nominal": "10",
+    "counter": "1",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi16
+Content-Type: application/json
+
+{
+    "nominal": "10",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi17
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "nominal": "10",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi18
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "kodeproduk": "AIGO1",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi19
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi2
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi20
+Content-Type: application/json
+
+{
+    "nominal": "10",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi21
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "nominal": "10",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi22
+Content-Type: application/json
+
+{
+    "tujuan": "081935155404",
+    "kodeproduk": "AIGO1",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi23
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "qty": "1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi24
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "qty": "1",
+    "tujuan": "081935155404",
+    "pin": "1234",
+    "counter": "1"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi25
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "tujuan": "081935155404",
+    "pin": "1234",
+    "trxid": "1"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi26
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "tujuan": "081935155404",
+    "pin": "1234",
+    "enduser": "081935155404"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi27
+Content-Type: application/json
+
+{}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi28
+Content-Type: application/json
+
+{
+    "nominal": "10",
+    "counter": "1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi29
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "qty": "1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi3
+Content-Type: application/json
+
+{
+    "counter": "1",
+    "kodeproduk": "AIGO1",
+    "qty": "1",
+    "tujuan": "081935155404",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi4
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "nominal": "10",
+    "tujuan": "081935155404",
+    "pin": "1234",
+    "enduser": "081935155404"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi5
+Content-Type: application/json
+
+{}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi6
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi7
+Content-Type: application/json
+
+{
+    "nominal": "10"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi8
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1"
+}
+
+### Transaksi pengisian pulsa
+POST https://localhost/api/otomax/inbox/transaksi9
+Content-Type: application/json
+
+{
+    "nominal": "10",
+    "pin": "1234"
+}
+
+### Transaksi pengisian pulsa TANPA pengecekan dobel
+POST https://localhost/api/otomax/inbox/transaksi-bebas-dobel
+Content-Type: application/json
+
+{}
+
+### Transfer saldo/deposit ke downline/reseller
+POST https://localhost/api/otomax/inbox/transfer-saldo
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "jumlah": "100000",
+    "pin": "1234"
+}
+
+### Transfer saldo/deposit ke downline/reseller
+POST https://localhost/api/otomax/inbox/transfer-saldo2
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "jumlah": "100000",
+    "keterangan": "OK",
+    "pin": "1234"
+}
+
+### Allows transfer balance across the membership network
+POST https://localhost/api/otomax/inbox/transfer-saldo-lintas
+Content-Type: application/json
+
+{}
+
+### Tukar komisi tunda dalam bentuk deposit
+POST https://localhost/api/otomax/inbox/tukar-komisi
+Content-Type: application/json
+
+{
+    "jumlah": "100000",
+    "pin": "1234"
+}
+
+### Tukar semua komisi tunda dalam bentuk deposit
+POST https://localhost/api/otomax/inbox/tukar-komisi2
+Content-Type: application/json
+
+{}
+
+### Menukar poin
+POST https://localhost/api/otomax/inbox/tukar-poin
+Content-Type: application/json
+
+{
+    "kode": "1",
+    "pin": "1234"
+}
+
+### Change IP Address
+POST https://localhost/api/otomax/inbox/ubah-alamat-ip
+Content-Type: application/json
+
+{
+    "newip": "192.168.1.123",
+    "pin": "1234"
+}
+
+### Ubah level downline
+POST https://localhost/api/otomax/inbox/ubah-level
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "kodelevel": "A",
+    "pin": "1234"
+}
+
+### Change downline's markup
+POST https://localhost/api/otomax/inbox/ubah-markup
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "markup": "100",
+    "pin": "1234"
+}
+
+### Change product markup
+POST https://localhost/api/otomax/inbox/ubah-markup-produk
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "markup": "100",
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Change product markup for all downlines
+POST https://localhost/api/otomax/inbox/ubah-markup-produk2
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "markup": "100",
+    "pin": "1234"
+}
+
+### Ubah nama
+POST https://localhost/api/otomax/inbox/ubah-nama
+Content-Type: application/json
+
+{
+    "nama": "Ridho",
+    "pin": "1234"
+}
+
+### Change OID for OtomaX HTH
+POST https://localhost/api/otomax/inbox/ubah-oid
+Content-Type: application/json
+
+{
+    "oid": "asdf3214qwer6547zxcv9874",
+    "pin": "1234"
+}
+
+### Change IP Password
+POST https://localhost/api/otomax/inbox/ubah-password-ip
+Content-Type: application/json
+
+{
+    "oldpassword": "abcd",
+    "newpassword": "dcba",
+    "pin": "1234"
+}
+
+### Ubah PIN
+POST https://localhost/api/otomax/inbox/ubah-pin
+Content-Type: application/json
+
+{
+    "pinlama": "1234",
+    "pinbaru": "4321"
+}
+
+### Change Report URL
+POST https://localhost/api/otomax/inbox/ubah-report-url
+Content-Type: application/json
+
+{
+    "newurl": "/api/test/report",
+    "pin": "1234"
+}
