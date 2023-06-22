@@ -1,0 +1,36 @@
+### post center
+POST http://localhost/api/center
+Content-Type: application/json
+
+{
+    "_id": "_id",
+    "service": "service",
+    "username": "username",
+    "password": "password",
+    "startup_login": 1,
+    "sender_speed": 1000,
+    "service_center": 1
+}
+
+### get center
+GET http://localhost/api/center
+
+### get center
+GET http://localhost/api/center?_id=_id
+
+### patch center
+PATCH http://localhost/api/center?_id=default
+Content-Type: application/json
+
+{
+    "_id": "_id",
+    "service": "service",
+    "username": "username",
+    "password": "password",
+    "startup_login": 1,
+    "sender_speed": 1000,
+    "service_center": 1
+}
+
+### delete center
+DELETE http://localhost/api/center?_id=default
