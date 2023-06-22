@@ -34,3 +34,20 @@ Content-Type: application/json
 
 ### delete center
 DELETE http://localhost/api/center?_id={{telegram_username}}
+
+
+
+
+
+
+### login
+GET http://localhost/api/center/login?_id={{telegram_username}}
+
+### logout
+GET http://localhost/api/center/logout?_id={{telegram_username}}
+
+### send
+GET http://localhost/api/center/send
+?_id={{telegram_username}}
+&penerima=
+&pesan=
