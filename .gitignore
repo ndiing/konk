@@ -136,6 +136,6 @@ dist
 !src/
 !src/**/
 !src/**/**/
-!src/**/**/rest.http
+!src/**/**/*.http
 !LICENSE
 !README.md

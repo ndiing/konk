@@ -1,0 +1,36 @@
+### post center
+POST http://localhost/api/center
+Content-Type: application/json
+
+{
+    "_id": "{{xmpp_username}}",
+    "service": "xmpp",
+    "username": "{{xmpp_username}}",
+    "password": "{{xmpp_password}}",
+    "startup_login": 1,
+    "sender_speed": 1000,
+    "service_center": 1
+}
+
+### get center
+GET http://localhost/api/center
+
+### get center
+GET http://localhost/api/center?_id={{xmpp_username}}
+
+### patch center
+PATCH http://localhost/api/center?_id={{xmpp_username}}
+Content-Type: application/json
+
+{
+    "_id": "{{xmpp_username}}",
+    "service": "xmpp",
+    "username": "{{xmpp_username}}",
+    "password": "{{xmpp_password}}",
+    "startup_login": 1,
+    "sender_speed": 1000,
+    "service_center": 1
+}
+
+### delete center
+DELETE http://localhost/api/center?_id={{xmpp_username}}
