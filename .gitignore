@@ -129,7 +129,11 @@ dist
 # konk
 
 *
+!.gitattributes
+!.gitignore
 !src/
 !src/**/
 !src/**/**/
 !src/**/**/rest.http
+!LICENSE
+!README.md
