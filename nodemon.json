@@ -1,0 +1,7 @@
+{
+    "ignore": ["data"],
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "ext": "js"
+}
