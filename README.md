@@ -12,7 +12,7 @@ konk
 ### bank
 
 - [x] **[bnidirect](./src/api/bank/bnidirect.rest.http)**
-- [ ] **[ibank](./src/api/bank/ibank.rest.http)**
+- [x] **[ibank](./src/api/bank/ibank.rest.http)**
 - [ ] **[mcm2](./src/api/bank/mcm2.rest.http)**
 - [x] **[newbiz](./src/api/bank/newbiz.rest.http)**
 
