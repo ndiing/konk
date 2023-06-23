@@ -1,19 +1,37 @@
-### post auth
-POST http://localhost/api/auth
+### signin
+POST http://localhost/api/auth/signin
 Content-Type: application/json
 
 {
+    "username":""
 }
 
-### get auth
-GET http://localhost/api/auth
 
-### patch auth
-PATCH http://localhost/api/auth?_id=
+### signup
+POST http://localhost/api/auth/signup
 Content-Type: application/json
 
 {
+    "username":""
 }
 
-### delete auth
-DELETE http://localhost/api/auth?_id=
+
+### challenge
+POST http://localhost/api/auth/challenge
+Content-Type: application/json
+
+{
+    "username":"",
+    "password":""
+}
+
+
+### signout
+GET http://localhost/api/auth/signout
+
+
+
+### refresh
+GET http://localhost/api/auth/refresh
+
+
