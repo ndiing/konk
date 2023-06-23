@@ -3,7 +3,7 @@ POST http://localhost/api/auth/signin
 Content-Type: application/json
 
 {
-    "username":""
+    "username":"6281234567891"
 }
 
 
@@ -12,7 +12,7 @@ POST http://localhost/api/auth/signup
 Content-Type: application/json
 
 {
-    "username":""
+    "username":"6281234567891"
 }
 
 
@@ -21,17 +21,19 @@ POST http://localhost/api/auth/challenge
 Content-Type: application/json
 
 {
-    "username":"",
-    "password":""
+    "username":"6281234567891",
+    "password":"316890"
 }
 
 
 ### signout
 GET http://localhost/api/auth/signout
+Authorization: Bearer {{access_token}}
 
 
 
 ### refresh
 GET http://localhost/api/auth/refresh
+Authorization: Bearer {{refresh_token}}
 
 
