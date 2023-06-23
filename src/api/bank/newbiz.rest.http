@@ -68,5 +68,5 @@ GET http://localhost/api/bank/logout?_id={{newbiz_norek}}
 ### mutasi
 GET http://localhost/api/bank/mutasi
 ?_id={{newbiz_norek}}
-&tanggal_awal=2023-05-01
-&tanggal_akhir=2023-05-31
+&tanggal_awal=2023-06-23
+&tanggal_akhir=2023-06-23
