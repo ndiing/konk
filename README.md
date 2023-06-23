@@ -1,10 +1,10 @@
 # [KonK]()
 
-`KonK` dibaca `Konek`, pakai qalqalah
+**`KonK`** dibaca **`Konek`**, pakai qalqalah
 
 ## Prasyarat
 
-Pastikan [nodejs v18](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi) sudah terpasang pada komputer 
+Pastikan **[Node js v18](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi)** sudah terpasang pada komputer
 
 ```bash
 > npm -v&node -v
@@ -23,45 +23,6 @@ v18.16.0
 
 ```bash
 > node dist/index.js
-```
-
-## Konfigurasi
-
-```json
-{
-    "path": {},
-    "server": {
-        "address": "192.168.1.123",
-        "hostname": "0.0.0.0",
-        "http": {
-            "port": 80
-        },
-        "https": {
-            "options": {},
-            "port": 443
-        }
-    },
-    "mssql": {
-        "config": {
-            "user": "",
-            "password": "",
-            "database": "otomax",
-            "server": "localhost",
-            "pool": {
-                "max": 10,
-                "min": 0,
-                "idleTimeoutMillis": 30000
-            },
-            "options": {
-                "encrypt": false,
-                "trustServerCertificate": true,
-                "trustedConnection": true
-            }
-        }
-    },
-    "permissions": []
-}
-
 ```
 
 ## [API]()
