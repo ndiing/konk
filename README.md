@@ -2,7 +2,7 @@
 
 **`KonK`** dibaca **`Konek`**, pakai qalqalah
 
-## Prasyarat
+## Precondition
 
 Pastikan **[Node js v18](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi)** sudah terpasang pada komputer
 
@@ -12,14 +12,14 @@ Pastikan **[Node js v18](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi)
 v18.16.0
 ```
 
-## Pemasangan
+## Installation
 
 ```bash
 > git clone https://github.com/ndiing/konk.git
 > cd konk
 ```
 
-## Menjalankan
+## Start
 
 ```bash
 > node dist/index.js
