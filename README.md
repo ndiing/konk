@@ -7,7 +7,7 @@
 Pastikan [nodejs v18](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi) sudah terpasang pada komputer 
 
 ```bash
->npm -v&node -v
+> npm -v&node -v
 8.17.0
 v18.16.0
 ```
@@ -15,14 +15,14 @@ v18.16.0
 ## Pemasangan
 
 ```bash
-git clone https://github.com/ndiing/konk.git
-cd konk
+> git clone https://github.com/ndiing/konk.git
+> cd konk
 ```
 
 ## Menjalankan
 
 ```bash
-node dist/index.js
+> node dist/index.js
 ```
 
 ## Konfigurasi
