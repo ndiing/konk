@@ -1,6 +1,6 @@
 # [KonK]()
 
-konk
+`KonK` dibaca `Konek`, pakai qalqalah
 
 ## [API]()
 
