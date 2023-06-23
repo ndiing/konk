@@ -14,12 +14,16 @@ v18.16.0
 
 ## Installation
 
+[Download](https://github.com/ndiing/konk/archive/refs/heads/main.zip) aplikasi ini, atau clone menggunakan git
+
 ```bash
 > git clone https://github.com/ndiing/konk.git
 > cd konk
 ```
 
 ## Start
+
+Pastikan sudah pada folder `konk`, dan jalankan perintah ini
 
 ```bash
 > node dist/index.js
