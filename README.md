@@ -1,15 +1,15 @@
-# konk
+# [KonK]()
 
 konk
 
-## api
+## [API]()
 
-### otomax
+### [OtomaX]()
 
 - [x] **[OtomaX](./src/api/otomax/rest.http)**
 - [ ] **[OAuth](./src/api/auth/rest.http)**
 
-### bank
+### [Bank]()
 
 - [x] **[BNI Direct](./src/api/bank/bnidirect.rest.http)**
 - [x] **[KlikBCA Individual](./src/api/bank/ibank.rest.http)**
@@ -17,13 +17,13 @@ konk
 - [x] **[Mandiri Cash Management](./src/api/bank/mcm2.rest.http)**
 - [x] **[iBBIZ BRI](./src/api/bank/newbiz.rest.http)**
 
-### center
+### [Center]()
 
 - [x] **[Telegram](./src/api/center/telegram.rest.http)**
 - [x] **[WhatsApp](./src/api/center/whatsapp.rest.http)**
 - [x] **[XMPP](./src/api/center/xmpp.rest.http)**
 
-### provider
+### [Provider]()
 
 - [ ] **[DigiPOS Aja](./src/api/digiposaja/rest.http)**
 - [ ] **[SiDOMPUL](./src/api/sidompul/rest.http)**
