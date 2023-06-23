@@ -1,6 +1,5 @@
 ### Lihat data transaksi
 GET https://localhost/api/otomax/transaksi
-Authorization: Bearer {{access_token}}
 
 ### Lihat data inbox
 GET https://localhost/api/otomax/inbox
