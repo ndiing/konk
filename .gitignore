@@ -144,13 +144,6 @@ root.cert
 root.key
 
 src
-!src
-src/*
-!src/*
-src/*/*
-!src/*/*/
-src/*/*/*
-!src/*/*/*.http
 
 # test   
 webpack.config.js
