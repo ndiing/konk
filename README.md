@@ -67,7 +67,7 @@ Pengembang menggunakan versi dari produk dibawah untuk melakukan pengembangan sa
 -   [ ] SQL Server **2019**
 -   [ ] OtomaX **4.1.4**
 
-### Keterangan
+### Symbol
 
 -   [x] Wajib
 -   [ ] Opsional
