@@ -1,0 +1,55 @@
+### post bank
+POST http://localhost/api/bank
+Content-Type: application/json
+
+{
+    "_id":"{{bnidirect_norek}}",
+    "service":"bnidirect",
+    "corp_id":"{{bnidirect_corp_id}}",
+    "user_id":"{{bnidirect_user_id}}",
+    "password":"{{bnidirect_password}}",
+    "interval":300000,
+    "auto_start":1,
+    "norek":"{{bnidirect_norek}}"
+}
+
+### get bank
+GET http://localhost/api/bank
+
+### patch bank
+PATCH http://localhost/api/bank?_id={{bnidirect_norek}}
+Content-Type: application/json
+
+{
+    "_id":"{{bnidirect_norek}}",
+    "service":"bnidirect",
+    "corp_id":"{{bnidirect_corp_id}}",
+    "user_id":"{{bnidirect_user_id}}",
+    "password":"{{bnidirect_password}}",
+    "interval":300000,
+    "auto_start":1,
+    "norek":"{{bnidirect_norek}}"
+}
+
+### delete bank
+DELETE http://localhost/api/bank?_id={{bnidirect_norek}}
+
+### post bank/data_bank
+POST http://localhost/api/bank/data_bank
+Content-Type: application/json
+
+{
+}
+
+### get bank/data_bank
+GET http://localhost/api/bank/data_bank?tanggal_awal=2023-06-01&tanggal_akhir=2023-06-31&limit=20&page=1
+
+### patch bank/data_bank
+PATCH http://localhost/api/bank/data_bank?kode={{bnidirect_norek}}
+Content-Type: application/json
+
+{
+}
+
+### delete bank/data_bank
+DELETE http://localhost/api/bank/data_bank?kode={{bnidirect_norek}}
