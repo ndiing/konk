@@ -128,23 +128,15 @@ out
 
 # konk
 
-# .gitattributes
-# .gitignore
 data   
-# dist   
 host.cert
 host.key
-# LICENSE
 nodemon.json
 node_modules
 package-lock.json
 package.json
-# README.md
 root.cert
 root.key
-
 src
-
-# test   
 webpack.config.js
 yarn.lock
