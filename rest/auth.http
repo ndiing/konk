@@ -1,0 +1,19 @@
+### post auth
+POST http://localhost/api/auth
+Content-Type: application/json
+
+{
+}
+
+### get auth
+GET http://localhost/api/auth
+
+### patch auth
+PATCH http://localhost/api/auth?_id=
+Content-Type: application/json
+
+{
+}
+
+### delete auth
+DELETE http://localhost/api/auth?_id=
