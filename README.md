@@ -2,7 +2,7 @@
 
 **`KonK`** dibaca **`Konek`**, pakai qalqalah
 
-## Precondition
+## Prasyarat
 
 Pastikan **[Node js v18](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi)** sudah terpasang pada komputer
 
@@ -12,7 +12,7 @@ Pastikan **[Node js v18](https://nodejs.org/dist/v18.16.1/node-v18.16.1-x64.msi)
 v18.16.0
 ```
 
-## Installation
+## Instalasi
 
 [Download](https://github.com/ndiing/konk/archive/refs/heads/main.zip) aplikasi ini, atau clone menggunakan git
 
@@ -21,7 +21,7 @@ v18.16.0
 > cd konk
 ```
 
-## Start
+## Mulai
 
 Pastikan sudah pada folder `konk`, dan jalankan perintah ini
 
@@ -59,7 +59,7 @@ Pastikan sudah pada folder `konk`, dan jalankan perintah ini
 -   [ ] **[SRIS](./src/api/sris/rest.http)**
 -   [ ] **[Kiosgamer](./src/api/kiosgamer/rest.http)**
 
-## Note
+## Catatan
 
 Pengembang menggunakan versi dari produk dibawah untuk melakukan pengembangan saat ini, pastikan menggunakan versi yang sama atau lebih tinggi
 
@@ -67,7 +67,7 @@ Pengembang menggunakan versi dari produk dibawah untuk melakukan pengembangan sa
 -   [ ] SQL Server **2019**
 -   [ ] OtomaX **4.1.4**
 
-### Symbol
+### Simbol
 
 -   [x] Wajib
 -   [ ] Opsional
