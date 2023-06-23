@@ -27,7 +27,7 @@ Content-Type: application/json
     "user_id":"{{mcm2_user_id}}",
     "password":"{{mcm2_password}}",
     "interval":300000,
-    "auto_start":1,
+    "auto_start":0,
     "norek":"{{mcm2_norek}}"
 }
 

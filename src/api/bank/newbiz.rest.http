@@ -27,7 +27,7 @@ Content-Type: application/json
     "user_id":"{{newbiz_user_id}}",
     "password":"{{newbiz_password}}",
     "interval":300000,
-    "auto_start":1,
+    "auto_start":0,
     "norek":"{{newbiz_norek}}"
 }
 

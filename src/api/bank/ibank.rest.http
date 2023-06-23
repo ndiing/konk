@@ -27,7 +27,7 @@ Content-Type: application/json
     "user_id":"{{ibank_user_id}}",
     "password":"{{ibank_password}}",
     "interval":300000,
-    "auto_start":1,
+    "auto_start":0,
     "norek":"{{ibank_norek}}"
 }
 
