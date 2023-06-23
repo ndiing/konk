@@ -42,7 +42,13 @@ Content-Type: application/json
 }
 
 ### get bank/data_bank
-GET http://localhost/api/bank/data_bank?tanggal_awal=2023-06-01&tanggal_akhir=2023-06-31&limit=20&page=1
+GET http://localhost/api/bank/data_bank
+?tanggal_awal=2023-06-01
+&tanggal_akhir=2023-06-31
+&limit=20
+&page=1
+&bank=BNI
+&no_rekening=
 
 ### patch bank/data_bank
 PATCH http://localhost/api/bank/data_bank?kode={{bnidirect_norek}}
