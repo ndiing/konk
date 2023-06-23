@@ -54,3 +54,11 @@ v18.16.0
 -   [ ] **[iSIMPEL](./src/api/isimpel/rest.http)**
 -   [ ] **[SRIS](./src/api/sris/rest.http)**
 -   [ ] **[Kiosgamer](./src/api/kiosgamer/rest.http)**
+
+## Note
+
+Pengembang menggunakan versi dari produk dibawah untuk melakukan pengembangan saat ini, pastikan menggunakan versi yang sama atau lebih tinggi
+
+-   Node js **v18**
+-   SQL Server **2019**
+-   OtomaX **4.1.4**
