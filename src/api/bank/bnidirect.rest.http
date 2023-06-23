@@ -59,3 +59,20 @@ Content-Type: application/json
 
 ### delete bank/data_bank
 DELETE http://localhost/api/bank/data_bank?kode={{bnidirect_norek}}
+
+
+
+
+
+
+### login
+GET http://localhost/api/bank/login?_id={{bnidirect_norek}}
+
+### logout
+GET http://localhost/api/bank/logout?_id={{bnidirect_norek}}
+
+### mutasi
+GET http://localhost/api/bank/mutasi
+?_id={{bnidirect_norek}}
+&tanggal_awal=2023-05-01
+&tanggal_akhir=2023-05-31

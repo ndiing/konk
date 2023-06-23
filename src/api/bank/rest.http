@@ -53,3 +53,20 @@ Content-Type: application/json
 
 ### delete bank/data_bank
 DELETE http://localhost/api/bank/data_bank?kode={{mcm2_norek}}
+
+
+
+
+
+
+### login
+GET http://localhost/api/bank/login?_id={{mcm2_norek}}
+
+### logout
+GET http://localhost/api/bank/logout?_id={{mcm2_norek}}
+
+### mutasi
+GET http://localhost/api/bank/mutasi
+?_id={{mcm2_norek}}
+&tanggal_awal=2023-05-01
+&tanggal_akhir=2023-05-31
