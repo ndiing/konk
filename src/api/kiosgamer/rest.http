@@ -1,0 +1,24 @@
+### post kiosgamer
+POST http://localhost/api/kiosgamer
+Content-Type: application/json
+
+{
+    "_id":"default",
+    "user":"name",
+    "pass":"word"
+}
+
+### get kiosgamer
+GET http://localhost/api/kiosgamer
+
+### patch kiosgamer
+PATCH http://localhost/api/kiosgamer?_id=default
+Content-Type: application/json
+
+{
+    "user":"name",
+    "pass":"word"
+}
+
+### delete kiosgamer
+DELETE http://localhost/api/kiosgamer?_id=default

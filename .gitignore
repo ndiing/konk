@@ -89,7 +89,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
 
 # Gatsby files
 .cache/
@@ -128,14 +128,30 @@ dist
 
 # konk
 
-*
-!test/
-!test/*
-!.gitattributes
-!.gitignore
-!src/
-!src/**/
-!src/**/**/
-!src/**/**/*.http
-!LICENSE
-!README.md
+# .gitattributes
+# .gitignore
+data   
+# dist   
+host.cert
+host.key
+# LICENSE
+nodemon.json
+node_modules
+package-lock.json
+package.json
+# README.md
+root.cert
+root.key
+
+src
+!src
+src/*
+!src/*
+src/*/*
+!src/*/*/
+src/*/*/*
+!src/*/*/*.http
+
+# test   
+webpack.config.js
+yarn.lock
