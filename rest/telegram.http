@@ -1,4 +1,4 @@
-### post center
+### Buat konfigurasi center/sender baru
 POST http://localhost/api/center
 Content-Type: application/json
 
@@ -12,13 +12,13 @@ Content-Type: application/json
     "service_center": 1
 }
 
-### get center
+### Lihat daftar center/sender
 GET http://localhost/api/center
 
-### get center
+### Lihat data center/sender dengan _id
 GET http://localhost/api/center?_id={{telegram_username}}
 
-### patch center
+### Ubah konfigurasi center/sender yang disimpan
 PATCH http://localhost/api/center?_id={{telegram_username}}
 Content-Type: application/json
 
@@ -32,22 +32,14 @@ Content-Type: application/json
     "service_center": 1
 }
 
-### delete center
+### Hapus konfigurasi center/sender yang disimpan
 DELETE http://localhost/api/center?_id={{telegram_username}}
 
-
-
-
-
-
-### login
+### Login
 GET http://localhost/api/center/login?_id={{telegram_username}}
 
-### logout
+### Logout
 GET http://localhost/api/center/logout?_id={{telegram_username}}
 
-### send
-GET http://localhost/api/center/send
-?_id={{telegram_username}}
-&penerima=1344008938
-&pesan=pesan
+### Kirim pesan
+GET http://localhost/api/center/send?_id={{telegram_username}}&penerima=1344008938&pesan=pesan

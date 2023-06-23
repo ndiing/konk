@@ -1,50 +1,46 @@
-### Data transaksi
+### Lihat data transaksi
 GET https://localhost/api/otomax/transaksi
 Authorization: Bearer {{access_token}}
 
-### Data inbox
+### Lihat data inbox
 GET https://localhost/api/otomax/inbox
 Authorization: Bearer {{access_token}}
 
-### Data outbox
+### Lihat data outbox
 GET https://localhost/api/otomax/outbox
 Authorization: Bearer {{access_token}}
 
-### Data mutasi
+### Lihat data mutasi
 GET https://localhost/api/otomax/mutasi
 Authorization: Bearer {{access_token}}
 
-### Data operator
+### Lihat data operator
 GET https://localhost/api/otomax/operator
 Authorization: Bearer {{access_token}}
 
-### Data produk
+### Lihat data produk
 GET https://localhost/api/otomax/produk
 Authorization: Bearer {{access_token}}
 
-### Data level
+### Lihat data level
 GET https://localhost/api/otomax/level
 Authorization: Bearer {{access_token}}
 
-### Data reseller
+### Lihat data reseller
 GET https://localhost/api/otomax/reseller
 Authorization: Bearer {{access_token}}
 
-### Data reseller/downline
+### Lihat data reseller/downline
 GET https://localhost/api/otomax/reseller/downline
 Authorization: Bearer {{access_token}}
 
-### Data pengirim
+### Lihat data pengirim
 GET https://localhost/api/otomax/pengirim
 Authorization: Bearer {{access_token}}
 
-### Data parameter
+### Lihat data parameter
 GET https://localhost/api/otomax/parameter
 Authorization: Bearer {{access_token}}
-
-
-
-
 
 ### Aktifkan downline/reseller
 POST https://localhost/api/otomax/inbox/aktifkan-dl
@@ -535,11 +531,6 @@ Content-Type: application/json
     "pin": "1234"
 }
 
-
-
-
-
-
 ### Tiket Deposit
 POST https://localhost/api/otomax/inbox/tiket-deposit
 Authorization: Bearer {{access_token}}
@@ -549,11 +540,6 @@ Content-Type: application/json
     "jumlah": "100000",
     "pin": "1234"
 }
-
-
-
-
-
 
 ### Transaksi pengisian pulsa
 POST https://localhost/api/otomax/inbox/transaksi

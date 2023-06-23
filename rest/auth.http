@@ -1,4 +1,4 @@
-### signin
+### Signin/Login
 POST http://localhost/api/auth/signin
 Content-Type: application/json
 
@@ -7,7 +7,7 @@ Content-Type: application/json
 }
 
 
-### signup
+### Signup/Daftar
 POST http://localhost/api/auth/signup
 Content-Type: application/json
 
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 
-### challenge
+### Challenge/Input OTP
 POST http://localhost/api/auth/challenge
 Content-Type: application/json
 
@@ -26,13 +26,13 @@ Content-Type: application/json
 }
 
 
-### signout
+### Signout/Logout
 GET http://localhost/api/auth/signout
 Authorization: Bearer {{access_token}}
 
 
 
-### refresh
+### Refresh token
 GET http://localhost/api/auth/refresh
 Authorization: Bearer {{refresh_token}}
 
