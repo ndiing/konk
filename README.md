@@ -34,7 +34,7 @@ Pastikan sudah pada folder `konk`, dan jalankan perintah ini
 ### [OtomaX]()
 
 -   [x] **[OtomaX](./rest/otomax.http)**
--   [ ] **[OAuth](./rest/.http)**
+-   [x] **[OAuth](./rest/.http)**
 
 ### [Bank]()
 
