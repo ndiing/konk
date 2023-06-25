@@ -1,43 +1,43 @@
-### Signin/Login
+### Login
 POST http://localhost/api/auth/signin
 Content-Type: application/json
 
 {
-    "username":"6281234567891"
+    "username":"6281234567896"
 }
 
 
-### Signup/Daftar
+### Register
 POST http://localhost/api/auth/signup
 Content-Type: application/json
 
 {
-    "username":"6281234567891"
+    "username":"6281234567896"
 }
 
 
-### Challenge/Input OTP
+### Confirm
 POST http://localhost/api/auth/challenge
 Content-Type: application/json
 
 {
-    "username":"6281234567891",
-    "password":"482830"
+    "username":"6281234567896",
+    "password":"864935"
 }
 
 
-### Signout/Logout
+### Logout
 GET http://localhost/api/auth/signout
 
-### Signout/Logout
+### Logout
 GET http://localhost/api/auth/signout
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJQUzUxMiJ9.eyJleHAiOjE2ODc2NzkyNDY0MDAsImlhdCI6MTY4NzY3NTY0NjM5OSwianRpIjoiZTY1YWFmZDgtOTkyNi00NzFmLWJiNjctYmI0NDQ2MDNkYTRlIiwia29kZV9yZXNlbGxlciI6Ik9YMDAwMiIsInBlbmdpcmltIjoiKzYyODEyMzQ1Njc4OTEiLCJyb2xlcyI6WyJ1c2VyIl19.OQutI3LUzPGVrKDUZ9qlzf7qmQRRvhc9V4udNgSBw7dvzFM03Hriju1-snZTSKCH9oWti-OnpuSEdpUb_Rm51Q4R0rMX4v9R3mdppll1uRYE0bKzo51rV9JgCjPGbhcV68E58b-3uAOfwGm21gcB89tFxElyuXpt8IUGJCLCBjRD4hvLSjyHAvIc_PzUdp4YPkCzhIl2unUHxSBsQiRO5Ecv3sLhYYXRgwSK2sQ9brL2o6qGCvH7mJvackx-KubacFj8TfAlOYSNJd9v59RDx1au61ldSiLtuu9R3anuImnLp4wsrUGJH0LCJnKoIH5AKrLLxKoGShrdf_dwVXCSYg
+Authorization: Bearer {{access_token}}
 
 
 
-### Refresh token
+### Refresh Token
 GET http://localhost/api/auth/refresh
 
-### Refresh token
+### Refresh Token
 GET http://localhost/api/auth/refresh
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJleHAiOjE2ODc3NjIwNDY0MDQsImlhdCI6MTY4NzY3NTY0NjM5OSwianRpIjoiZTY1YWFmZDgtOTkyNi00NzFmLWJiNjctYmI0NDQ2MDNkYTRlIiwia29kZV9yZXNlbGxlciI6Ik9YMDAwMiIsInBlbmdpcmltIjoiKzYyODEyMzQ1Njc4OTEiLCJyb2xlcyI6WyJyZWZyZXNoIl19.Mz3JX-3n3m-V1jwGBoQm30c9fyXykeXLlfpl6lCoAk-dyHBjSLga8UYCyaTh8OIPsgfTBERDoeLbrk0mu97dJJYBvXYvciH9Y0vtG9zmHpRTRXXQdBhSVGKN6pN_u52VXpw7aAvCxt7ukPIs4mrFavfjAdO59ACfZmG7pLaXZbwK9rD69qk-9OxgKL0LD93_nZh0uhawHYXsIPn-ZHdv6aJ88-hLL7fNv_245cMMUWkxX8MFhQxSOl9SnED9RLJ8XHIWHWSqx1XRd5GyUyErJwfYSRMJLlbisLU81zGPp08yE47HDXqUrABDOEFzlF8BlxGK1ftGRVrMZdEQaG3Szw
+Authorization: Bearer {{refresh_token}}
