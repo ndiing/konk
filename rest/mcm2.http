@@ -1,47 +1,55 @@
-### Buat konfigurasi bank baru
-POST http://localhost/api/bank
+
+### Buat konfigurasi baru
+POST https://localhost/api/bank
 Content-Type: application/json
 
 {
-    "_id":"{{mcm2_norek}}",
-    "service":"mcm2",
+    "norek":"{{mcm2_norek}}",
+    "tipe":"mcm2",
     "corp_id":"{{mcm2_corp_id}}",
     "user_id":"{{mcm2_user_id}}",
     "password":"{{mcm2_password}}",
     "interval":300000,
-    "auto_start":1,
-    "norek":"{{mcm2_norek}}"
+    "auto_start":0
 }
 
-### Lihat Konfigurasi Bank
-GET http://localhost/api/bank
+### Ambil semua konfigurasi
+GET https://localhost/api/bank
 
-### Ubah konfigurasi bank
-PATCH http://localhost/api/bank?_id={{mcm2_norek}}
+### Lihat Konfigurasi
+GET https://localhost/api/bank?norek={{mcm2_norek}}
+
+### Ubah konfigurasi
+PATCH https://localhost/api/bank?norek={{mcm2_norek}}
 Content-Type: application/json
 
 {
-    "_id":"{{mcm2_norek}}",
-    "service":"mcm2",
+    "norek":"{{mcm2_norek}}",
+    "tipe":"mcm2",
     "corp_id":"{{mcm2_corp_id}}",
     "user_id":"{{mcm2_user_id}}",
     "password":"{{mcm2_password}}",
     "interval":300000,
-    "auto_start":0,
-    "norek":"{{mcm2_norek}}"
+    "auto_start":1
 }
 
-### Hapus konfigurasi bank
-DELETE http://localhost/api/bank?_id={{mcm2_norek}}
+### Hapus konfigurasi
+DELETE https://localhost/api/bank?norek={{mcm2_norek}}
 
-### Lihat mutasi bank yang disimpan
-GET http://localhost/api/bank/data_bank?tanggal_awal=2023-06-01&tanggal_akhir=2023-06-31&limit=20&page=1
 
-### Masuk/Login dengan konfigurasi yang disimpan
-GET http://localhost/api/bank/login?_id={{mcm2_norek}}
 
-### Keluar/Logout
-GET http://localhost/api/bank/logout?_id={{mcm2_norek}}
 
-### Lihat mutasi bank
-GET http://localhost/api/bank/mutasi?_id={{mcm2_norek}}&tanggal_awal=2023-05-01&tanggal_akhir=2023-05-31
+
+
+### Login
+GET https://localhost/api/bank/login?norek={{mcm2_norek}}
+
+### Logout
+GET https://localhost/api/bank/logout?norek={{mcm2_norek}}
+
+### Mutasi
+GET https://localhost/api/bank/mutasi
+?norek={{mcm2_norek}}
+&page=1
+&tanggal_awal=2023-05-01
+&tanggal_akhir=2023-05-30

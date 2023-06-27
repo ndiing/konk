@@ -1,45 +1,52 @@
-### Buat konfigurasi center/sender baru
-POST http://localhost/api/center
+
+### Buat konfigurasi baru
+POST https://localhost/api/center
 Content-Type: application/json
 
 {
-    "_id": "{{whatsapp_username}}",
-    "service": "whatsapp",
     "username": "{{whatsapp_username}}",
     "password": "{{whatsapp_password}}",
-    "startup_login": 1,
+    "type": "whatsapp",
+    "startup_login": 0,
     "sender_speed": 1000,
-    "service_center": 1
+    "sms_center": 1
 }
 
-### Lihat daftar center/sender
-GET http://localhost/api/center
+### Ambil semua konfigurasi
+GET https://localhost/api/center
 
-### Lihat data center/sender dengan _id
-GET http://localhost/api/center?_id={{whatsapp_username}}
+### Lihat Konfigurasi
+GET https://localhost/api/center?username={{whatsapp_username}}
 
-### Ubah konfigurasi center/sender yang disimpan
-PATCH http://localhost/api/center?_id={{whatsapp_username}}
+### Ubah konfigurasi
+PATCH https://localhost/api/center?username={{whatsapp_username}}
 Content-Type: application/json
 
 {
-    "_id": "{{whatsapp_username}}",
-    "service": "whatsapp",
     "username": "{{whatsapp_username}}",
     "password": "{{whatsapp_password}}",
+    "type": "whatsapp",
     "startup_login": 1,
     "sender_speed": 1000,
-    "service_center": 1
+    "sms_center": 1
 }
 
-### Hapus konfigurasi center/sender yang disimpan
-DELETE http://localhost/api/center?_id={{whatsapp_username}}
+### Hapus konfigurasi
+DELETE https://localhost/api/center?username={{whatsapp_username}}
+
+
+
+
+
 
 ### Login
-GET http://localhost/api/center/login?_id={{whatsapp_username}}
+GET https://localhost/api/center/login?username={{whatsapp_username}}
 
 ### Logout
-GET http://localhost/api/center/logout?_id={{whatsapp_username}}
+GET https://localhost/api/center/logout?username={{whatsapp_username}}
 
-### Kirim pesan
-GET http://localhost/api/center/send?_id={{whatsapp_username}}&penerima=6281935155404&pesan=pesan
+### Mengirim pesan
+GET https://localhost/api/center/send
+?username={{whatsapp_username}}
+&penerima=6281935155404
+&pesan=6281935155404

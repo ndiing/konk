@@ -492,6 +492,5 @@ __webpack_require__(97878);
 __webpack_require__(19651);
 })();
 
-module.exports = __webpack_exports__;
 /******/ })()
 ;

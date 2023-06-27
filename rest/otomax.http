@@ -1,45 +1,144 @@
-### Lihat data transaksi
+### transaksi?page=&limit=&tanggal_awal=&tanggal_akhir
 GET https://localhost/api/otomax/transaksi
+Authorization: Bearer {{access_token}}
 
-### Lihat data inbox
+### inbox?page=&limit=&tanggal_awal=&tanggal_akhir
 GET https://localhost/api/otomax/inbox
 Authorization: Bearer {{access_token}}
 
-### Lihat data outbox
+### outbox?page=&limit=&tanggal_awal=&tanggal_akhir
 GET https://localhost/api/otomax/outbox
 Authorization: Bearer {{access_token}}
 
-### Lihat data mutasi
+### mutasi?page=&limit=&tanggal_awal=&tanggal_akhir
 GET https://localhost/api/otomax/mutasi
 Authorization: Bearer {{access_token}}
 
-### Lihat data operator
+### operator
 GET https://localhost/api/otomax/operator
 Authorization: Bearer {{access_token}}
 
-### Lihat data produk
+### produk?page=&limit=&kode_operator=&kode_produk=
 GET https://localhost/api/otomax/produk
 Authorization: Bearer {{access_token}}
 
-### Lihat data level
+### level
 GET https://localhost/api/otomax/level
 Authorization: Bearer {{access_token}}
 
-### Lihat data reseller
+### reseller
 GET https://localhost/api/otomax/reseller
 Authorization: Bearer {{access_token}}
 
-### Lihat data reseller/downline
-GET https://localhost/api/otomax/reseller/downline
-Authorization: Bearer {{access_token}}
-
-### Lihat data pengirim
+### pengirim?page=&limit=
 GET https://localhost/api/otomax/pengirim
 Authorization: Bearer {{access_token}}
 
-### Lihat data parameter
-GET https://localhost/api/otomax/parameter
+
+
+
+
+
+### Check downline's markup
+POST https://localhost/api/otomax/inbox/cek-markup
 Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Check product markup
+POST https://localhost/api/otomax/inbox/cek-markup-produk
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "kodeproduk": "AIGO1",
+    "pin": "1234"
+}
+
+### Check all product markups
+POST https://localhost/api/otomax/inbox/cek-markup-produk2
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+
+### Delete product markup
+POST https://localhost/api/otomax/inbox/hapus-markup-produk
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234",
+    "kodeproduk": "AIGO1"
+}
+
+### Delete product markup
+POST https://localhost/api/otomax/inbox/hapus-markup-produk2
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234"
+}
+
+### Delete product markup
+POST https://localhost/api/otomax/inbox/hapus-markup-produk3
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "kodeproduk": "AIGO1",
+    "pin": "1234"
+}
+
+### Change downline's markup
+POST https://localhost/api/otomax/inbox/ubah-markup
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "markup": "100",
+    "pin": "1234"
+}
+
+### Change product markup
+POST https://localhost/api/otomax/inbox/ubah-markup-produk
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "kodereseller": "OX0002",
+    "pin": "1234",
+    "kodeproduk": "AON1",
+    "markup": "100"
+}
+
+### Change product markup for all downlines
+POST https://localhost/api/otomax/inbox/ubah-markup-produk2
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+    "pin": "1234",
+    "kodeproduk": "AON1",
+    "markup": "100"
+}
+
+
+
+
 
 ### Aktifkan downline/reseller
 POST https://localhost/api/otomax/inbox/aktifkan-dl
@@ -57,7 +156,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "trxid": "1",
+    "trxid": "123",
     "pin": "1234"
 }
 
@@ -159,7 +258,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "nomor tujuan": "081935155404"
+    "nomor tujuan": "6281935155404"
 }
 
 ### Cek status transaksi
@@ -168,7 +267,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404"
+    "tujuan": "6281935155404"
 }
 
 ### Cek status transaksi
@@ -178,7 +277,7 @@ Content-Type: application/json
 
 {
     "tanggal": "17",
-    "tujuan": "081935155404"
+    "tujuan": "6281935155404"
 }
 
 ### Cek status N (lihat Setting.LimitCekTransaksiAkhir) transaksi terakhir
@@ -196,7 +295,7 @@ Content-Type: application/json
 {
     "nama": "Ridho",
     "alamat": "Pacitan",
-    "nomorhp": "081935155404",
+    "nomorhp": "6281935155404",
     "pin": "1234"
 }
 
@@ -208,7 +307,7 @@ Content-Type: application/json
 {
     "nama": "Ridho",
     "alamat": "Pacitan",
-    "nomorhp": "081935155404",
+    "nomorhp": "6281935155404",
     "markup": "100",
     "pin": "1234"
 }
@@ -221,7 +320,7 @@ Content-Type: application/json
 {
     "nama": "Ridho",
     "alamat": "Pacitan",
-    "nomorhp": "081935155404",
+    "nomorhp": "6281935155404",
     "kodelevel": "A",
     "pin": "1234"
 }
@@ -264,9 +363,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "kodeproduk": "AIGO1",
     "kodereseller": "OX0002",
-    "pin": "1234"
+    "pin": "1234",
+    "kodeproduk": "AIGO1"
 }
 
 ### Delete product markup
@@ -295,7 +394,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234"
 }
 
@@ -306,7 +405,7 @@ Content-Type: application/json
 
 {
     "kodereseller": "OX0002",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234"
 }
 
@@ -316,7 +415,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "nomor": "081935155404",
+    "nomor": "6281935155404",
     "pin": "1234"
 }
 
@@ -484,7 +583,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234"
 }
 
@@ -495,7 +594,7 @@ Content-Type: application/json
 
 {
     "kodereseller": "OX0002",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234"
 }
 
@@ -505,7 +604,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "number": "081935155404",
+    "number": "6281935155404",
     "pin": "1234"
 }
 
@@ -547,7 +646,7 @@ Content-Type: application/json
 
 {
     "kodeproduk": "AIGO1",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234"
 }
 
@@ -557,9 +656,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
+    "pin": "1234",
     "kodeproduk": "AIGO1",
-    "tujuan": "081935155404",
-    "pin": "1234"
+    "tujuan": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -568,9 +667,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "nominal": "10",
-    "tujuan": "081935155404",
-    "pin": "1234"
+    "pin": "1234",
+    "nominal": "5",
+    "tujuan": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -579,9 +678,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
-    "nominal": "10",
-    "pin": "1234"
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "nominal": "5"
 }
 
 ### Transaksi pengisian pulsa
@@ -590,9 +689,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
-    "kodeproduk": "AIGO1",
-    "pin": "1234"
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "kodeproduk": "AIGO1"
 }
 
 ### Transaksi pengisian pulsa
@@ -601,10 +700,10 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
+    "pin": "1234",
     "kodeproduk": "AIGO1",
     "counter": "1",
-    "tujuan": "081935155404",
-    "pin": "1234"
+    "tujuan": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -613,8 +712,8 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
-    "nominal": "10",
+    "tujuan": "6281935155404",
+    "nominal": "5",
     "counter": "1",
     "pin": "1234"
 }
@@ -625,9 +724,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "nominal": "10",
-    "tujuan": "081935155404",
-    "pin": "1234"
+    "pin": "1234",
+    "nominal": "5",
+    "tujuan": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -636,9 +735,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
-    "nominal": "10",
-    "pin": "1234"
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "nominal": "5"
 }
 
 ### Transaksi pengisian pulsa
@@ -647,9 +746,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
-    "kodeproduk": "AIGO1",
-    "pin": "1234"
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "kodeproduk": "AIGO1"
 }
 
 ### Transaksi pengisian pulsa
@@ -658,9 +757,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
+    "pin": "1234",
     "kodeproduk": "AIGO1",
-    "tujuan": "081935155404",
-    "pin": "1234"
+    "tujuan": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -669,9 +768,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
+    "pin": "1234",
     "kodeproduk": "AIGO1",
-    "tujuan": "081935155404",
-    "pin": "1234"
+    "tujuan": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -680,9 +779,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "nominal": "10",
-    "tujuan": "081935155404",
-    "pin": "1234"
+    "pin": "1234",
+    "nominal": "5",
+    "tujuan": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -691,9 +790,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
-    "nominal": "10",
-    "pin": "1234"
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "nominal": "5"
 }
 
 ### Transaksi pengisian pulsa
@@ -702,9 +801,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "tujuan": "081935155404",
-    "kodeproduk": "AIGO1",
-    "pin": "1234"
+    "pin": "1234",
+    "tujuan": "6281935155404",
+    "kodeproduk": "AIGO1"
 }
 
 ### Transaksi pengisian pulsa
@@ -713,10 +812,10 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
+    "tujuan": "6281935155404",
+    "pin": "1234",
     "kodeproduk": "AIGO1",
-    "qty": "1",
-    "tujuan": "081935155404",
-    "pin": "1234"
+    "qty": "1"
 }
 
 ### Transaksi pengisian pulsa
@@ -727,7 +826,7 @@ Content-Type: application/json
 {
     "kodeproduk": "AIGO1",
     "qty": "1",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234",
     "counter": "1"
 }
@@ -739,9 +838,9 @@ Content-Type: application/json
 
 {
     "kodeproduk": "AIGO1",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234",
-    "trxid": "1"
+    "trxid": "123"
 }
 
 ### Transaksi pengisian pulsa
@@ -751,9 +850,9 @@ Content-Type: application/json
 
 {
     "kodeproduk": "AIGO1",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234",
-    "enduser": "081935155404"
+    "enduser": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -769,9 +868,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "nominal": "10",
+    "nominal": "5",
     "counter": "1",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234"
 }
 
@@ -783,7 +882,7 @@ Content-Type: application/json
 {
     "kodeproduk": "AIGO1",
     "qty": "1",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234"
 }
 
@@ -796,7 +895,7 @@ Content-Type: application/json
     "counter": "1",
     "kodeproduk": "AIGO1",
     "qty": "1",
-    "tujuan": "081935155404",
+    "tujuan": "6281935155404",
     "pin": "1234"
 }
 
@@ -807,10 +906,10 @@ Content-Type: application/json
 
 {
     "kodeproduk": "AIGO1",
-    "nominal": "10",
-    "tujuan": "081935155404",
+    "nominal": "5",
+    "tujuan": "6281935155404",
     "pin": "1234",
-    "enduser": "081935155404"
+    "enduser": "6281935155404"
 }
 
 ### Transaksi pengisian pulsa
@@ -836,7 +935,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "nominal": "10"
+    "nominal": "5"
 }
 
 ### Transaksi pengisian pulsa
@@ -854,7 +953,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "nominal": "10",
+    "nominal": "5",
     "pin": "1234"
 }
 
@@ -884,7 +983,7 @@ Content-Type: application/json
 {
     "kodereseller": "OX0002",
     "jumlah": "100000",
-    "keterangan": "OK",
+    "keterangan": "keterangan",
     "pin": "1234"
 }
 
@@ -918,7 +1017,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "kode": "1",
+    "kode": "AIGO1",
     "pin": "1234"
 }
 
@@ -960,10 +1059,10 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "kodeproduk": "AIGO1",
-    "markup": "100",
     "kodereseller": "OX0002",
-    "pin": "1234"
+    "pin": "1234",
+    "kodeproduk": "AIGO1",
+    "markup": "100"
 }
 
 ### Change product markup for all downlines
@@ -972,9 +1071,9 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
+    "pin": "1234",
     "kodeproduk": "AIGO1",
-    "markup": "100",
-    "pin": "1234"
+    "markup": "100"
 }
 
 ### Ubah nama
@@ -993,7 +1092,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "oid": "asdf3214qwer6547zxcv9874",
+    "oid": "OID",
     "pin": "1234"
 }
 
@@ -1024,6 +1123,7 @@ Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
 {
-    "newurl": "/api/test/report",
+    "newurl": "/test/report",
     "pin": "1234"
 }
+
