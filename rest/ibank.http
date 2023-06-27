@@ -41,6 +41,25 @@ DELETE https://localhost/api/bank?norek={{ibank_norek}}
 
 
 
+### Lihat semua data bank
+GET https://localhost/api/bank/data-bank
+?tanggal_awal=2023-06-01
+&tanggal_akhir=2023-06-30
+&bank=
+&no_rekening=
+&limit=20
+&page=1
+
+
+### Hapus data bank
+DELETE https://localhost/api/bank/data-bank?kode=
+
+
+
+
+
+
+
 ### Login
 GET https://localhost/api/bank/login?norek={{ibank_norek}}
 
