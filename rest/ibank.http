@@ -9,7 +9,7 @@ Content-Type: application/json
     "corp_id":"{{ibank_corp_id}}",
     "user_id":"{{ibank_user_id}}",
     "password":"{{ibank_password}}",
-    "interval":300000,
+    "interval":120000,
     "auto_start":0
 }
 
@@ -29,7 +29,7 @@ Content-Type: application/json
     "corp_id":"{{ibank_corp_id}}",
     "user_id":"{{ibank_user_id}}",
     "password":"{{ibank_password}}",
-    "interval":300000,
+    "interval":120000,
     "auto_start":1
 }
 
