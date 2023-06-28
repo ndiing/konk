@@ -1,0 +1,52 @@
+
+### Buat konfigurasi baru
+POST https://localhost/api/center
+Content-Type: application/json
+
+{
+    "username": "{{telegram_client_username}}",
+    "password": "{{telegram_client_password}}",
+    "type": "telegram_client",
+    "startup_login": 0,
+    "sender_speed": 1000,
+    "sms_center": 1
+}
+
+### Ambil semua konfigurasi
+GET https://localhost/api/center
+
+### Lihat Konfigurasi
+GET https://localhost/api/center?username={{telegram_client_username}}
+
+### Ubah konfigurasi
+PATCH https://localhost/api/center?username={{telegram_client_username}}
+Content-Type: application/json
+
+{
+    "username": "{{telegram_client_username}}",
+    "password": "{{telegram_client_password}}",
+    "type": "telegram_client",
+    "startup_login": 1,
+    "sender_speed": 1000,
+    "sms_center": 1
+}
+
+### Hapus konfigurasi
+DELETE https://localhost/api/center?username={{telegram_client_username}}
+
+
+
+
+
+
+### Login
+GET https://localhost/api/center/login?username={{telegram_client_username}}
+
+### Logout
+GET https://localhost/api/center/logout?username={{telegram_client_username}}
+
+### Mengirim pesan
+GET https://localhost/api/center/send
+?username={{telegram_client_username}}
+&penerima=6281938064470
+&pesan=6281938064470
