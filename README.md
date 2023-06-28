@@ -39,7 +39,9 @@ Pastikan sudah pada folder `konk`, dan jalankan perintah ini
 ### [Bank]()
 
 -   [x] **[BNI Direct](./rest/bnidirect.http)**
+
 -   [x] **[KlikBCA Individual](./rest/ibank.http)**
+    -   abaikan `corp_id`
 -   [ ] **[KlikBCA Bisnis](./rest/.http)**
 -   [x] **[Mandiri Cash Management](./rest/mcm2.http)**
 -   [x] **[iBBIZ BRI](./rest/newbiz.http)**
@@ -48,6 +50,8 @@ Pastikan sudah pada folder `konk`, dan jalankan perintah ini
 
 -   [x] **[Telegram](./rest/telegram.http)**
 -   [x] **[Telegram Client](./rest/telegram-client.http)**
+    -   `username` = api_id
+    -   `password` = api_hash
 -   [x] **[WhatsApp](./rest/whatsapp.http)**
 -   [x] **[XMPP](./rest/xmpp.http)**
 
