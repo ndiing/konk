@@ -47,6 +47,7 @@ Pastikan sudah pada folder `konk`, dan jalankan perintah ini
 ### [Center]()
 
 -   [x] **[Telegram](./rest/telegram.http)**
+-   [x] **[Telegram Client](./rest/telegram-client.http)**
 -   [x] **[WhatsApp](./rest/whatsapp.http)**
 -   [x] **[XMPP](./rest/xmpp.http)**
 
