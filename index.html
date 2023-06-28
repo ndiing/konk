@@ -44,18 +44,14 @@
             class AppMain extends LitElement {
                 static get properties() {
                     return {
-                        data: { type: Array },
+                        columns: { type: Array },
+                        rows: { type: Array },
                     };
                 }
                 constructor() {
                     super();
-                    this.data = [];
-                }
-                get columns() {
-                    return Array.from(new Set(this.data.map(Object.keys).flat()));
-                }
-                get rows() {
-                    return this.data.reverse();
+                    this.rows = [];
+                    this.columns = [];
                 }
                 render() {
                     return html`
@@ -82,6 +78,7 @@
                 }
             }
             customElements.define("app-main", AppMain);
+            const docs=[]
             const connect = () => {
                 const socket = new WebSocket("ws://localhost");
                 socket.addEventListener("open", console.log);
@@ -95,7 +92,9 @@
                     const json = JSON.parse(event.data);
                     const data = json.data ?? {};
                     data.eventName = json.eventName;
-                    main.data.push(data);
+                    docs.push(data);
+                    main.columns=Array.from(new Set(docs.map(Object.keys).flat()));
+                    main.rows=docs.slice().reverse();
                     main.requestUpdate();
                 });
             };
