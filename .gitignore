@@ -141,3 +141,4 @@ src
 config.json
 webpack.config.js
 yarn.lock
+index.html
