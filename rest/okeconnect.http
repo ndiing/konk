@@ -1,0 +1,74 @@
+
+### Buat konfigurasi baru
+POST https://localhost/api/bank
+Content-Type: application/json
+
+{
+    "norek":"{{okeconnect_norek}}",
+    "tipe":"okeconnect",
+    "corp_id":"{{okeconnect_corp_id}}",
+    "user_id":"{{okeconnect_user_id}}",
+    "password":"{{okeconnect_password}}",
+    "interval":120000,
+    "auto_start":0
+}
+
+### Ambil semua konfigurasi
+GET https://localhost/api/bank
+
+### Lihat Konfigurasi
+GET https://localhost/api/bank?norek={{okeconnect_norek}}
+
+### Ubah konfigurasi
+PATCH https://localhost/api/bank?norek={{okeconnect_norek}}
+Content-Type: application/json
+
+{
+    "norek":"{{okeconnect_norek}}",
+    "tipe":"okeconnect",
+    "corp_id":"{{okeconnect_corp_id}}",
+    "user_id":"{{okeconnect_user_id}}",
+    "password":"{{okeconnect_password}}",
+    "interval":120000,
+    "auto_start":1
+}
+
+### Hapus konfigurasi
+DELETE https://localhost/api/bank?norek={{okeconnect_norek}}
+
+
+
+
+
+
+### Lihat semua data bank
+GET https://localhost/api/bank/data-bank
+?tanggal_awal=2023-07-01
+&tanggal_akhir=2023-07-30
+&bank=
+&no_rekening=
+&limit=20
+&page=1
+
+
+### Hapus data bank
+DELETE https://localhost/api/bank/data-bank?kode=
+
+
+
+
+
+
+
+### Login
+GET https://localhost/api/bank/login?norek={{okeconnect_norek}}
+
+### Logout
+GET https://localhost/api/bank/logout?norek={{okeconnect_norek}}
+
+### Mutasi
+GET https://localhost/api/bank/mutasi
+?norek={{okeconnect_norek}}
+&page=1
+&tanggal_awal=2023-06-27
+&tanggal_akhir=2023-06-27
