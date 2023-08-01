@@ -976,7 +976,7 @@ Content-Type: application/json
 }
 
 ### Transfer saldo/deposit ke downline/reseller
-POST https://localhost/api/otomax/inbox/transfer-saldo2
+POST http://103.184.122.10/api/otomax/inbox/transfer-saldo2
 Authorization: Bearer {{access_token}}
 Content-Type: application/json
 
@@ -986,6 +986,14 @@ Content-Type: application/json
     "keterangan": "keterangan",
     "pin": "1234"
 }
+
+### Transfer saldo/deposit ke downline/reseller
+GET http://103.184.122.10/api/otomax/inbox/transfer-saldo2?
+?kodereseller=OX0002
+&jumlah=100000
+&keterangan=keterangan
+&pin=1234
+Authorization: Bearer {{access_token}}
 
 ### Allows transfer balance across the membership network
 POST https://localhost/api/otomax/inbox/transfer-saldo-lintas
