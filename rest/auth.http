@@ -1,43 +1,43 @@
 ### Login
-POST http://localhost/api/auth/signin
+POST http://103.184.122.10/api/auth/signin
 Content-Type: application/json
 
 {
-    "username":"+6281234567890"
+    "username":"+6285793712632"
 }
 
 
 ### Register
-POST http://localhost/api/auth/signup
+POST http://103.184.122.10/api/auth/signup
 Content-Type: application/json
 
 {
-    "username":"+6281234567890"
+    "username":"+6285793712632"
 }
 
 
 ### Confirm
-POST http://localhost/api/auth/challenge
+POST http://103.184.122.10/api/auth/challenge
 Content-Type: application/json
 
 {
-    "username":"+6281234567890",
-    "password":"394038"
+    "username":"+6285793712632",
+    "password":"235958"
 }
 
 
 ### Logout
-GET http://localhost/api/auth/signout
+GET http://103.184.122.10/api/auth/signout
 
 ### Logout
-GET http://localhost/api/auth/signout
+GET http://103.184.122.10/api/auth/signout
 Authorization: Bearer {{access_token}}
 
 
 
 ### Refresh Token
-GET http://localhost/api/auth/refresh
+GET http://103.184.122.10/api/auth/refresh
 
 ### Refresh Token
-GET http://localhost/api/auth/refresh
+GET http://103.184.122.10/api/auth/refresh
 Authorization: Bearer {{refresh_token}}
