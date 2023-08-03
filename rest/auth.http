@@ -22,7 +22,7 @@ Content-Type: application/json
 
 {
     "username":"+6285793712632",
-    "password":"235958"
+    "password":"242242"
 }
 
 
@@ -37,6 +37,7 @@ Authorization: Bearer {{access_token}}
 
 ### Refresh Token
 GET http://103.184.122.10/api/auth/refresh
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJleHAiOjE2OTExNTY0NDg2MzgsImlhdCI6MTY5MTA3MDA0ODYzMSwianRpIjoiNWVlMDMyZWUtOTQ5MC00YmJhLWIxNmEtMGNkYjAzOTczYjlkIiwia29kZV9yZXNlbGxlciI6IldQMTU5ODUiLCJwZW5naXJpbSI6Iis2MjgxMzE5Mjc5OTM3Iiwicm9sZXMiOlsicmVmcmVzaCJdfQ.04mwfpy1yiBbELNqu9HzbRNHd9VNJAx9grF144_PD2RLdBVtTvZHbGTFZhP3h4E2ulYsuBvaNpvexL9uoAd8XGj_-Z_WOGBhR5B05DLMgTKnHvpJeDBzv-jJ0HTe9-OTrqP8PjQUbc3_WSd7h6wE87opjuVuy8EjtUmVq7V8ji70LMWDS6zrJUKhRLzu0rpyQS-pPjmsFIjtnIfcFTqPZqfAWfeeb1Pa9OlMcJ_g87tl5e56msGuVgbM
 
 ### Refresh Token
 GET http://103.184.122.10/api/auth/refresh
