@@ -1,2 +1,55 @@
+### kelompok_jawaban (irs,otomax,okeconnect)
+POST http://localhost/api/price
+Content-Type: application/json
+
+{
+    "label": "wijayapayment",
+    "kelompok_jawaban": "otomax",
+    "tujuan": "http://report.wijayapayment.co.id/harga.js.php?id=06fb96cadc6401273a0952e6f42b594cb990fd73c0a206ae97a6e8be15367debb933ee8ff59bdd329dc8edbb84a12efa-121"
+}
+
 ###
 GET http://localhost/api/price
+
+###
+GET http://localhost/api/price?kode=2
+
+###
+PATCH http://localhost/api/price?kode=2
+Content-Type: application/json
+
+{
+    "label": "irs",
+    "kelompok_jawaban": "irs",
+    "tujuan": "http://121.101.131.50:8088/api/pricelistfront"
+}
+
+###
+DELETE http://localhost/api/price?kode=12
+
+
+### Mapping (kelompok_produk.kode_kelompok,kelompok_produk.kode) > (produk.kode) | nama,harga (optional) diupdate otomatis saat sync ke server
+POST http://localhost/api/price/merge
+Content-Type: application/json
+
+{   
+    "kode_kelompok":1,
+    "kode":"AAF",
+    "kode_produk":"AIGO1",
+    "nama":"ARTHA ASIA FINANCE",
+    "harga":400.0000
+}
+
+###
+GET http://localhost/api/price/compare
+?page=1
+&limit=20
+&kode_produk=X5
+&kode_produk=X100
+&kode_produk=X50
+&kode_produk=X10
+&kode_produk=X15
+&kode_produk=X25
+&label=irs
+&label=okeconnect
+&label=wijayapayment
