@@ -40,7 +40,7 @@ Content-Type: application/json
     "harga":400.0000
 }
 
-###
+### kode_produk (optional) jika di kosongkan akan menampilkan semua produk
 GET http://localhost/api/price/compare
 ?page=1
 &limit=20
