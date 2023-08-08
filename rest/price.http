@@ -3,9 +3,9 @@ POST http://localhost/api/price
 Content-Type: application/json
 
 {
-    "label": "wijayapayment",
-    "kelompok_jawaban": "otomax",
-    "tujuan": "http://report.wijayapayment.co.id/harga.js.php?id=06fb96cadc6401273a0952e6f42b594cb990fd73c0a206ae97a6e8be15367debb933ee8ff59bdd329dc8edbb84a12efa-121"
+    "label": "irs",
+    "kelompok_jawaban": "irs",
+    "tujuan": "http://121.101.131.50:8088/api/pricelistfront"
 }
 
 ###
