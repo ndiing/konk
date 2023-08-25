@@ -1,0 +1,66 @@
+
+### CONFIG (CALLBACK => SETTING KE OTOMAX)
+POST http://localhost/api/mitra-bukalapak/config?
+Content-Type: application/json
+
+{
+    "callback": "http://127.0.0.1/api/mitra-bukalapak/debug",
+    "scope":[
+        "user.wallet-balance.read",
+        "transaction.prepaid-electricity-transaction.read",
+        "transaction.prepaid-electricity-transaction.write",
+        "transaction.e-wallet-transaction.read",
+        "transaction.e-wallet-transaction.write",
+        "transaction.prepaid-phone-transaction.read",
+        "transaction.prepaid-phone-transaction.write"
+    ],
+    "basic_token":"username:password"
+}
+
+### CALLBACK (SETTING DI MITRA BUKALAPAK => http://localhost/api/mitra-bukalapak/callback)
+POST http://localhost/api/mitra-bukalapak/callback
+Content-Type: application/json
+
+[{"prepaid_electricity_transaction":{"order_id":"12000000009","customer_name":"AHMADI","customer_number":"520000000000","meter_number":"520000000000","token_number":"40129107110371994273","segmentation":"R1M","power":"900","kwh":"13.6","reference_number":"0ASM21VS125496FEEE3ACE3E05D321EB","currency":"IDR","total_price":"50000","token_price":"18348","value_added_tax":"0","public_lighting_tax":"1652","stamp_duty":"0","installment":"0","admin_fee":"500","info":"Informasi Hubungi Call Center 123 Atau hubungi PLN Terdekat ","response_code":"0000","message":"successful"}},{"e_wallet_transaction":{"order_id":"22000000006","phone_number":"081200000000","customer_name":"John Doe","serial_number":"1234567890","currency":"IDR","total_price":"10000","response_code":"0000","message":"successful"}},{"prepaid_phone_transaction":{"order_id":"32000000003","phone_number":"081200000000","serial_number":"1234567890","currency":"IDR","total_price":"10000","response_code":"0000","message":"successful"}}]
+
+### TOKEN
+GET http://localhost/api/mitra-bukalapak/token?
+
+### BALANCE
+GET http://localhost/api/mitra-bukalapak/balance?
+
+### LISTRIK
+GET http://localhost/api/mitra-bukalapak/listrik?order_id=&product_code=&customer_number=
+
+### ADVICE_LISTRIK
+GET http://localhost/api/mitra-bukalapak/advice_listrik?order_id=
+
+### INQUIRY_LISTRIK
+GET http://localhost/api/mitra-bukalapak/inquiry_listrik?product_code=&customer_number=
+
+### PULSA
+GET http://localhost/api/mitra-bukalapak/pulsa?order_id=&product_code=&customer_number=
+
+### ADVICE_PULSA
+GET http://localhost/api/mitra-bukalapak/advice_pulsa?order_id=
+
+### INQUIRY_PULSA
+GET http://localhost/api/mitra-bukalapak/inquiry_pulsa?product_code=&customer_number=
+
+### WALLET
+GET http://localhost/api/mitra-bukalapak/wallet?order_id=&product_code=&customer_number=
+
+### ADVICE_WALLET
+GET http://localhost/api/mitra-bukalapak/advice_wallet?order_id=
+
+### INQUIRY_WALLET
+GET http://localhost/api/mitra-bukalapak/inquiry_wallet?product_code=&customer_number=
+
+### LISTRIK_PASCABAYAR
+GET http://localhost/api/mitra-bukalapak/listrik_pascabayar?order_id=&product_code=&customer_number=
+
+### ADVICE_LISTRIK_PASCABAYAR
+GET http://localhost/api/mitra-bukalapak/advice_listrik_pascabayar?order_id=
+
+### INQUIRY_LISTRIK_PASCABAYAR
+GET http://localhost/api/mitra-bukalapak/inquiry_listrik_pascabayar?product_code=&customer_number=
