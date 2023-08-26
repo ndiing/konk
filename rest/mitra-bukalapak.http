@@ -12,7 +12,9 @@ Content-Type: application/json
         "transaction.e-wallet-transaction.read",
         "transaction.e-wallet-transaction.write",
         "transaction.prepaid-phone-transaction.read",
-        "transaction.prepaid-phone-transaction.write"
+        "transaction.prepaid-phone-transaction.write",
+        "transaction.postpaid-electricity-transaction.write",
+        "transaction.postpaid-electricity-transaction.read"
     ],
     "basic_token":"username:password"
 }
