@@ -66,3 +66,17 @@ GET http://localhost/api/mitra-bukalapak/advice_listrik_pascabayar?order_id=
 
 ### INQUIRY_LISTRIK_PASCABAYAR
 GET http://localhost/api/mitra-bukalapak/inquiry_listrik_pascabayar?product_code=&customer_number=
+
+
+
+
+
+
+### LISTRIK_PASCABAYAR
+GET http://localhost/api/mitra-bukalapak/listrik_pascabayar?order_id=123456789&product_code=listrik-pascabayar&customer_number=520000000000
+
+### ADVICE_LISTRIK_PASCABAYAR
+GET http://localhost/api/mitra-bukalapak/advice_listrik_pascabayar?order_id=123456789
+
+### INQUIRY_LISTRIK_PASCABAYAR
+GET http://localhost/api/mitra-bukalapak/inquiry_listrik_pascabayar?product_code=&customer_number=
