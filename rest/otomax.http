@@ -30,6 +30,9 @@ Authorization: Bearer {{access_token}}
 GET https://localhost/api/otomax/reseller
 Authorization: Bearer {{access_token}}
 
+### reseller
+GET https://localhost/api/otomax/reseller
+
 ### pengirim?page=&limit=
 GET https://localhost/api/otomax/pengirim
 Authorization: Bearer {{access_token}}
