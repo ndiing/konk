@@ -1,5 +1,5 @@
 ### Login
-POST http://103.184.122.10/api/auth/signin
+POST http://localhost/api/auth/signin
 Content-Type: application/json
 
 {
@@ -8,7 +8,7 @@ Content-Type: application/json
 
 
 ### Register
-POST http://103.184.122.10/api/auth/signup
+POST http://localhost/api/auth/signup
 Content-Type: application/json
 
 {
@@ -17,7 +17,7 @@ Content-Type: application/json
 
 
 ### Confirm
-POST http://103.184.122.10/api/auth/challenge
+POST http://localhost/api/auth/challenge
 Content-Type: application/json
 
 {
@@ -27,18 +27,18 @@ Content-Type: application/json
 
 
 ### Logout
-GET http://103.184.122.10/api/auth/signout
+GET http://localhost/api/auth/signout
 
 ### Logout
-GET http://103.184.122.10/api/auth/signout
+GET http://localhost/api/auth/signout
 Authorization: Bearer {{access_token}}
 
 
 
 ### Refresh Token
-GET http://103.184.122.10/api/auth/refresh
+GET http://localhost/api/auth/refresh
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJleHAiOjE2OTExNTY0NDg2MzgsImlhdCI6MTY5MTA3MDA0ODYzMSwianRpIjoiNWVlMDMyZWUtOTQ5MC00YmJhLWIxNmEtMGNkYjAzOTczYjlkIiwia29kZV9yZXNlbGxlciI6IldQMTU5ODUiLCJwZW5naXJpbSI6Iis2MjgxMzE5Mjc5OTM3Iiwicm9sZXMiOlsicmVmcmVzaCJdfQ.04mwfpy1yiBbELNqu9HzbRNHd9VNJAx9grF144_PD2RLdBVtTvZHbGTFZhP3h4E2ulYsuBvaNpvexL9uoAd8XGj_-Z_WOGBhR5B05DLMgTKnHvpJeDBzv-jJ0HTe9-OTrqP8PjQUbc3_WSd7h6wE87opjuVuy8EjtUmVq7V8ji70LMWDS6zrJUKhRLzu0rpyQS-pPjmsFIjtnIfcFTqPZqfAWfeeb1Pa9OlMcJ_g87tl5e56msGuVgbM
 
 ### Refresh Token
-GET http://103.184.122.10/api/auth/refresh
+GET http://localhost/api/auth/refresh
 Authorization: Bearer {{refresh_token}}
