@@ -50,3 +50,13 @@ GET https://localhost/api/center/send
 ?username={{whatsapp_username}}
 &penerima=6281935155404
 &pesan=6281935155404
+
+### Mengirim pesan
+POST https://localhost/api/center/send
+Content-Type: application/json
+
+{
+    "username":"{{whatsapp_username}}",
+    "penerima":"6281935155404",
+    "pesan":"6281935155404"
+}
