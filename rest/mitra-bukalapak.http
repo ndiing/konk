@@ -16,7 +16,14 @@ Content-Type: application/json
         "transaction.postpaid-electricity-transaction.write",
         "transaction.postpaid-electricity-transaction.read"
     ],
-    "basic_token":"wijaya-trimitra-indonesia-client-id:uI3diz9iVWBY0VuxyHaxiWHKT4F72cCh"
+    "basic_token":"username:password",
+    "parser":{
+        "prepaid-electricity-transaction":null,
+        "e-wallet-transaction":null,
+        "prepaid-phone-transaction":null,
+        "postpaid-electricity-transaction":null,
+        "fallback":"order_id [order_id] customer_number [customer_number] reference_number [reference_number] message [message]"
+    }
 }
 
 
