@@ -1,0 +1,27 @@
+
+###
+GET http://localhost/api/report/post_cek?act=44&uid=devs
+
+###
+GET http://localhost/api/report/get_adm
+
+### Login
+GET http://localhost/api/report/post?usernm=devs&passwd=&login=Login&log=
+
+###
+GET http://localhost/api/report/get
+
+### Verifikasi Foto
+GET http://localhost/api/report/get_admin_verifikasifoto?hal=1
+
+### Foto Agen
+GET http://localhost/api/report/get_foto_agen?foto=
+
+### Foto KTP
+GET http://localhost/api/report/get_foto_ktp?foto=
+
+### Logout
+GET http://localhost/api/report/get_logout
+
+###
+GET http://localhost/api/report/sync
