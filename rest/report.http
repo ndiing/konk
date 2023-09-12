@@ -23,5 +23,5 @@ GET http://localhost/api/report/get_foto_ktp?foto=
 ### Logout
 GET http://localhost/api/report/get_logout
 
-###
+### Sync data ke lokal
 GET http://localhost/api/report/sync
