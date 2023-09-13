@@ -29,6 +29,6 @@ GET http://localhost/api/report/sync
 ### Lokal Data
 GET http://localhost/api/report/agen
 ### Lokal Foto Agen
-GET http://localhost/api/report/foto_agen/....jpg
+GET http://localhost/api/report/foto_agen/nama_file.jpg
 ### Lokal Foto KTP
-GET http://localhost/api/report/foto_ktp/....jpg
+GET http://localhost/api/report/foto_ktp/nama_file.jpg
