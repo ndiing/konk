@@ -25,3 +25,10 @@ GET http://localhost/api/report/get_logout
 
 ### Sync data ke lokal
 GET http://localhost/api/report/sync
+
+### Lokal Data
+GET http://localhost/api/report/agen
+### Lokal Foto Agen
+GET http://localhost/api/report/foto_agen/....jpg
+### Lokal Foto KTP
+GET http://localhost/api/report/foto_ktp/....jpg
