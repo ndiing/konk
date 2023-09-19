@@ -22,7 +22,7 @@ Content-Type: application/json
         "e-wallet-transaction":null,
         "prepaid-phone-transaction":null,
         "postpaid-electricity-transaction":null,
-        "postpaid_electricity_customer":"bills [bills.0.period]/[bills.0.penalty_fee]/[bills.0.amount]",
+        "postpaid_electricity_customer":"bills [customer_name]/[customer_number]/period=[bills.0.period]/penalty_fee=[bills.0.penalty_fee]/amount=[bills.0.amount]/admin_charge=[admin_charge]/period=[period.0] total_price [total_price]",
         "default":"order_id [order_id] customer_number [customer_number] reference_number [reference_number] message [message]"
     }
 }
