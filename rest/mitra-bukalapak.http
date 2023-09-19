@@ -24,6 +24,16 @@ Content-Type: application/json
         "postpaid-electricity-transaction":null,
         "postpaid_electricity_customer":"bills [customer_name]/[customer_number]/period=[bills.0.period]/penalty_fee=[bills.0.penalty_fee]/amount=[bills.0.amount]/admin_charge=[admin_charge]/period=[period.0] total_price [total_price]",
         "default":"order_id [order_id] customer_number [customer_number] reference_number [reference_number] message [message]"
+    },
+    "formula":{
+      "postpaid_electricity_customer":{
+        "custom_admin":"3000",
+        "custom_total":"[custom_admin]+[bills.0.amount]",
+        "custom_balance":"[balance]-[total_price]"
+      },
+      "default":{
+        "custom_admin":"0"
+      }
     }
 }
 
