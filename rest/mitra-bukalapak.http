@@ -108,16 +108,16 @@ GET http://localhost/api/mitra-bukalapak/inquiry_listrik?product_code=&customer_
 
 
 ### PULSA
-GET http://localhost/api/mitra-bukalapak/pulsa?order_id=&product_code=&customer_number=
+GET http://localhost/api/mitra-bukalapak/pulsa?order_id=&product_code=&phone_number =
 
 ###
-GET http://localhost/api/mitra-bukalapak/pulsa?order_id=35345&product_code=tsel100&customer_number=0821312312
+GET http://localhost/api/mitra-bukalapak/pulsa?order_id=35345&product_code=tsel100&phone_number =0821312312
 
 ### ADVICE_PULSA
 GET http://localhost/api/mitra-bukalapak/advice_pulsa?order_id=
 
 ### INQUIRY_PULSA
-GET http://localhost/api/mitra-bukalapak/inquiry_pulsa?product_code=&customer_number=
+GET http://localhost/api/mitra-bukalapak/inquiry_pulsa?product_code=&phone_number =
 
 
 
