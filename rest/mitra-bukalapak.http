@@ -94,13 +94,13 @@ GET http://localhost/api/mitra-bukalapak/balance?stg=1
 
 
 ### LISTRIK
-GET http://localhost/api/mitra-bukalapak/listrik?order_id=&product_code=&customer_number=&stg=1
+GET http://localhost/api/mitra-bukalapak/listrik?order_id=&product_code=&customer_number=
 
 ### ADVICE_LISTRIK
-GET http://localhost/api/mitra-bukalapak/advice_listrik?order_id=&stg=1
+GET http://localhost/api/mitra-bukalapak/advice_listrik?order_id=
 
 ### INQUIRY_LISTRIK
-GET http://localhost/api/mitra-bukalapak/inquiry_listrik?product_code=&customer_number=&stg=1
+GET http://localhost/api/mitra-bukalapak/inquiry_listrik?product_code=&customer_number=
 
 
 
@@ -108,13 +108,16 @@ GET http://localhost/api/mitra-bukalapak/inquiry_listrik?product_code=&customer_
 
 
 ### PULSA
-GET http://localhost/api/mitra-bukalapak/pulsa?order_id=&product_code=&customer_number=&stg=1
+GET http://localhost/api/mitra-bukalapak/pulsa?order_id=&product_code=&customer_number=
+
+###
+GET http://localhost/api/mitra-bukalapak/pulsa?order_id=35345&product_code=tsel100&customer_number=0821312312
 
 ### ADVICE_PULSA
-GET http://localhost/api/mitra-bukalapak/advice_pulsa?order_id=&stg=1
+GET http://localhost/api/mitra-bukalapak/advice_pulsa?order_id=
 
 ### INQUIRY_PULSA
-GET http://localhost/api/mitra-bukalapak/inquiry_pulsa?product_code=&customer_number=&stg=1
+GET http://localhost/api/mitra-bukalapak/inquiry_pulsa?product_code=&customer_number=
 
 
 
@@ -122,13 +125,13 @@ GET http://localhost/api/mitra-bukalapak/inquiry_pulsa?product_code=&customer_nu
 
 
 ### WALLET
-GET http://localhost/api/mitra-bukalapak/wallet?order_id=&product_code=&customer_number=&stg=1
+GET http://localhost/api/mitra-bukalapak/wallet?order_id=&product_code=&customer_number=
 
 ### ADVICE_WALLET
-GET http://localhost/api/mitra-bukalapak/advice_wallet?order_id=&stg=1
+GET http://localhost/api/mitra-bukalapak/advice_wallet?order_id=
 
 ### INQUIRY_WALLET
-GET http://localhost/api/mitra-bukalapak/inquiry_wallet?product_code=&customer_number=&stg=1
+GET http://localhost/api/mitra-bukalapak/inquiry_wallet?product_code=&customer_number=
 
 
 
@@ -136,10 +139,10 @@ GET http://localhost/api/mitra-bukalapak/inquiry_wallet?product_code=&customer_n
 
 
 ### LISTRIK_PASCABAYAR
-GET http://localhost/api/mitra-bukalapak/listrik_pascabayar?order_id=&product_code=&customer_number=&stg=1
+GET http://localhost/api/mitra-bukalapak/listrik_pascabayar?order_id=&product_code=&customer_number=
 
 ### ADVICE_LISTRIK_PASCABAYAR
-GET http://localhost/api/mitra-bukalapak/advice_listrik_pascabayar?order_id=&stg=1
+GET http://localhost/api/mitra-bukalapak/advice_listrik_pascabayar?order_id=
 
 ### INQUIRY_LISTRIK_PASCABAYAR
-GET http://localhost/api/mitra-bukalapak/inquiry_listrik_pascabayar?product_code=&customer_number=&stg=1
+GET http://localhost/api/mitra-bukalapak/inquiry_listrik_pascabayar?product_code=&customer_number=
