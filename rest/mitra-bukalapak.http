@@ -72,6 +72,20 @@ Content-Type: application/json
     "message": "successful"
   },"prepaid_electricity_transaction":{"order_id":"12000000009","customer_name":"AHMADI","customer_number":"520000000000","meter_number":"520000000000","token_number":"40129107110371994273","segmentation":"R1M","power":"900","kwh":"13.6","reference_number":"0ASM21VS125496FEEE3ACE3E05D321EB","currency":"IDR","total_price":"50000","token_price":"18348","value_added_tax":"0","public_lighting_tax":"1652","stamp_duty":"0","installment":"0","admin_fee":"500","info":"Informasi Hubungi Call Center 123 Atau hubungi PLN Terdekat ","response_code":"0000","message":"successful"}},{"e_wallet_transaction":{"order_id":"22000000006","phone_number":"081200000000","customer_name":"John Doe","serial_number":"1234567890","currency":"IDR","total_price":"10000","response_code":"0000","message":"successful"}},{"prepaid_phone_transaction":{"order_id":"32000000003","phone_number":"081200000000","serial_number":"1234567890","currency":"IDR","total_price":"10000","response_code":"0000","message":"successful"}}]]
 
+### CALLBACK (SETTING DI MITRA BUKALAPAK => http://localhost/api/mitra-bukalapak/callback)
+POST http://localhost/api/mitra-bukalapak/callback
+Content-Type: application/json
+
+{
+  "prepaid_phone_transaction": {
+    "order_id": "35351",
+    "phone_number": "08213123120000",
+    "currency": "IDR",
+    "total_price": "97300",
+    "response_code": "0005",
+    "message": "other error"
+  }
+}
 
 
 
