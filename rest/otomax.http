@@ -22,6 +22,41 @@ Authorization: Bearer {{access_token}}
 GET https://localhost/api/otomax/produk
 Authorization: Bearer {{access_token}}
 
+
+
+
+
+
+### produk?page=&limit=&kode_operator=&kode_produk=
+GET https://localhost/api/otomax/produk
+Authorization: Bearer {{access_token}}
+
+### produk?page=&limit=&kode_operator=&kode_produk=
+GET https://localhost/api/otomax/produk
+?kode_operator=AXD
+&page=1
+&limit=100
+Authorization: Bearer {{access_token}}
+
+
+
+
+
+
+### produk?page=&limit=&kode_operator=&kode_produk=
+GET https://localhost/api/otomax/produk
+?kode_operator=AXD
+&page=1
+&limit=100
+
+### produk?page=&limit=&kode_operator=&kode_produk=
+GET https://localhost/api/otomax/produk
+
+
+
+
+
+
 ### level
 GET https://localhost/api/otomax/level
 Authorization: Bearer {{access_token}}
