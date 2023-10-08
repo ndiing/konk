@@ -3,7 +3,7 @@ POST http://localhost/api/auth/signin
 Content-Type: application/json
 
 {
-    "username":"+621234567890"
+    "username":"+621234567891"
 }
 
 
@@ -12,7 +12,10 @@ POST http://localhost/api/auth/signup
 Content-Type: application/json
 
 {
-    "username":"+621234567890"
+    "username":"+621234567891",
+    "name":"budi",
+    "address":"jakarta",
+    "pin":"1234"
 }
 
 
@@ -21,7 +24,7 @@ POST http://localhost/api/auth/challenge
 Content-Type: application/json
 
 {
-    "username":"+621234567890",
+    "username":"+621234567891",
     "password":"037939"
 }
 
