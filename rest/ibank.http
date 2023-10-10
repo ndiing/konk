@@ -50,6 +50,9 @@ GET https://localhost/api/bank/data-bank
 &limit=20
 &page=1
 
+### send data bank
+GET https://localhost/api/bank/data-bank/kode
+
 
 ### Hapus data bank
 DELETE https://localhost/api/bank/data-bank?kode=
@@ -80,3 +83,4 @@ Content-Type: application/json
 {
     "message":"ok"
 }
+
