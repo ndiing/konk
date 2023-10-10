@@ -72,3 +72,11 @@ GET https://localhost/api/bank/mutasi
 &page=1
 &tanggal_awal=2023-06-27
 &tanggal_akhir=2023-06-27
+
+### callback
+POST https://localhost/api/bank/callback
+Content-Type: application/json
+
+{
+    "message":"ok"
+}
