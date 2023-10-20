@@ -139,13 +139,13 @@ GET http://localhost/api/mitra-bukalapak/inquiry_pulsa?product_code=&phone_numbe
 
 
 ### WALLET
-GET http://localhost/api/mitra-bukalapak/wallet?order_id=&product_code=&customer_number=
+GET http://localhost/api/mitra-bukalapak/wallet?order_id=&product_code=&phone_number=
 
 ### ADVICE_WALLET
 GET http://localhost/api/mitra-bukalapak/advice_wallet?order_id=
 
 ### INQUIRY_WALLET
-GET http://localhost/api/mitra-bukalapak/inquiry_wallet?product_code=&customer_number=
+GET http://localhost/api/mitra-bukalapak/inquiry_wallet?product_code=&phone_number=
 
 
 
