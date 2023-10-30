@@ -1,3 +1,20 @@
+### data_bank?page=&limit=&tanggal_awal=&tanggal_akhir
+GET https://localhost/api/otomax/data_bank
+?bank=
+&tgl_bank_awal=2022-01-01
+&tgl_bank_akhir=2023-10-30
+&jumlah=
+&tipe=
+&keterangan=
+&terklaim=
+&page=
+&limit=
+
+
+
+
+
+
 ### transaksi?page=&limit=&tanggal_awal=&tanggal_akhir
 GET https://localhost/api/otomax/transaksi
 Authorization: Bearer {{access_token}}

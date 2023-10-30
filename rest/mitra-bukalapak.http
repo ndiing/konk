@@ -18,12 +18,8 @@ Content-Type: application/json
     ],
     "basic_token":"username:password",
     "parser":{
-        "prepaid-electricity-transaction":null,
-        "e-wallet-transaction":null,
-        "prepaid-phone-transaction":null,
-        "postpaid-electricity-transaction":null,
-        "postpaid_electricity_customer":"bills [customer_name]/[customer_number]/period=[bills.0.period]/penalty_fee=[bills.0.penalty_fee]/amount=[bills.0.amount]/admin_charge=[admin_charge]/period=[period.0] total_price [total_price] admin=[custom_admin] total=[custom_total] balance=[custom_balance]",
-        "default":"order_id [order_id] customer_number [customer_number] reference_number [reference_number] message [message]"
+        "postpaid_electricity_customer":"data=[customer_name]/[customer_number]/[segmentation]/[power]/[stand_meter]/[outstanding_bill]/[unpaid_bill]/[period.0]/[penalty_fee]/[admin_charge]/[bills.0.period]/[bills.0.penalty_fee]/[bills.0.amount]/[currency]/[total_price] order_id=[order_id] phone_number=[phone_number] serial_number=[serial_number] total_price=[total_price] response_code=[response_code] custom_admin=[custom_admin] custom_tagihan=[custom_tagihan] custom_total=[custom_total] custom_balance=[custom_balance]",
+        "default":"order_id=[order_id] phone_number=[phone_number] serial_number=[serial_number] total_price=[total_price] response_code=[response_code] custom_admin=[custom_admin] custom_tagihan=[custom_tagihan] custom_total=[custom_total] custom_balance=[custom_balance]"
     },
     "formula":{
       "postpaid_electricity_customer":{
@@ -76,16 +72,37 @@ Content-Type: application/json
 POST http://localhost/api/mitra-bukalapak/callback
 Content-Type: application/json
 
-{
-  "prepaid_phone_transaction": {
-    "order_id": "35351",
-    "phone_number": "08213123120000",
+{"prepaid_phone_transaction":{"order_id":"32000000003","phone_number":"081200000000","serial_number":"1234567890","currency":"IDR","total_price":"10000","response_code":"0000","message":"successful"}}
+
+### CALLBACK (SETTING DI MITRA BUKALAPAK => http://localhost/api/mitra-bukalapak/callback)
+POST http://localhost/api/mitra-bukalapak/callback
+Content-Type: application/json
+
+{"postpaid_electricity_customer": {
+    "customer_name": "LANGGAR ALI MUCHTAR",
+    "customer_number": "518010582090",
+    "segmentation": "R1M",
+    "power": 900,
+    "stand_meter": "00001629-00001752",
+    "outstanding_bill": 1,
+    "unpaid_bill": 0,
+    "period": [
+      "2023-09-01"
+    ],
+    "penalty_fee": "0",
+    "admin_charge": "150",
+    "bills": [
+      {
+        "period": "2023-09-01",
+        "penalty_fee": "0",
+        "amount": "182926"
+      }
+    ],
     "currency": "IDR",
-    "total_price": "97300",
-    "response_code": "0005",
-    "message": "other error"
-  }
-}
+    "total_price": "183076",
+    "response_code": "0000",
+    "message": "successful"
+  }}
 
 
 
