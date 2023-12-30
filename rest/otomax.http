@@ -1,3 +1,41 @@
+
+# 1. Total Harga Beli per supplier
+# 2. Total Harga Jual per supplier
+### ?kode_modul=&tanggal_awal=&tanggal_akhir=&page=&limit=
+GET http://localhost/api/otomax/admin/total_transaksi
+
+# 3. Saldo supplier (modul)
+### ?kode_modul=&page=&limit=
+GET http://localhost/api/otomax/admin/saldo_supplier
+
+# 5. Total Saldo reseller/agen
+###
+GET http://localhost/api/otomax/admin/saldo_reseller
+
+# 4. Komisi 
+# 6. komisi reseller harian dan keseluruhan 
+### ?kode_reseller=&tanggal_awal=&tanggal_akhir=&page=&limit=
+GET http://localhost/api/otomax/admin/komisi_reseller
+
+# 7. Mutasi saldo
+### ?kode_reseller=&kode_mutasi=&jumlah=&jenis=&keterangan=&tanggal_awal=&tanggal_akhir=&page=&limit=
+GET http://localhost/api/otomax/admin/mutasi_reseller
+
+# 8. report produk
+# a. list dari yang terbanyak trx
+### ?kode_reseller=&kode_produk=&tanggal_awal=&tanggal_akhir=&page=&limit=
+GET http://localhost/api/otomax/admin/daftar_penjualan
+
+# 8. report produk
+# b. list produk banyak gagal
+# c. list produk banyak gangguan
+### ?kode_produk=&status=&tanggal_awal=&tanggal_akhir=&page=&limit=
+GET http://localhost/api/otomax/admin/daftar_pembelian
+
+
+
+
+
 ### data_bank?page=&limit=&tanggal_awal=&tanggal_akhir
 GET https://localhost/api/otomax/data_bank
 ?bank=
