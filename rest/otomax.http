@@ -1,3 +1,53 @@
+### get_akun
+GET http://localhost/api/otomax/admin/get_akun
+?
+
+### get_buku_besar
+GET http://localhost/api/otomax/admin/get_buku_besar
+?kode_akun=11020
+
+### get_buku_besar_pembantu_uang_muka_penjualan
+GET http://localhost/api/otomax/admin/get_buku_besar_pembantu_uang_muka_penjualan
+?kode_reseller=OX0007
+
+### get_buku_besar_pembantu_komisi_penjualan
+GET http://localhost/api/otomax/admin/get_buku_besar_pembantu_komisi_penjualan
+?kode_reseller=OX0007
+
+### get_buku_besar_pembantu_uang_muka_pembelian
+GET http://localhost/api/otomax/admin/get_buku_besar_pembantu_uang_muka_pembelian
+?kode_supplier=304
+
+### get_penjualan_per_produk
+GET http://localhost/api/otomax/admin/get_penjualan_per_produk
+?kode_produk=AIGO5
+
+### get_penjualan_per_produk_per_reseller
+GET http://localhost/api/otomax/admin/get_penjualan_per_produk_per_reseller
+?kode_produk=AIGO5
+&kode_reseller=OX0007
+
+### get_pembelian_per_produk_per_supplier
+GET http://localhost/api/otomax/admin/get_pembelian_per_produk_per_supplier
+?kode_produk=AIGO5
+&kode_supplier=304
+
+### get_neraca_saldo
+GET http://localhost/api/otomax/admin/get_neraca_saldo
+?
+
+### get_laba_rugi
+GET http://localhost/api/otomax/admin/get_laba_rugi
+?
+
+### get_neraca
+GET http://localhost/api/otomax/admin/get_neraca
+?
+
+
+
+
+
 
 # 1. Total Harga Beli per supplier
 # 2. Total Harga Jual per supplier
