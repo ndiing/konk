@@ -52,8 +52,7 @@ Content-Type: application/json
     "tanggal": "",
     "keterangan": "",
     "entri": [
-        {"kode_akun": "32099","debit": 7677697,"kredit": 0},
-        {"kode_akun": "11010","debit": 0,"kredit": 7677697}
+        {"kode_akun": "11010","debit": 1000000,"kredit": 0}
     ]
 }
 
