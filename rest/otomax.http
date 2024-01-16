@@ -1,46 +1,46 @@
-### get_akun
+### Get Akun
 GET http://localhost/api/otomax/admin/get_akun
 ?
 
-### get_buku_besar
+### Get Buku Besar
 GET http://localhost/api/otomax/admin/get_buku_besar
 ?kode_akun=11020
 
-### get_buku_besar_pembantu_uang_muka_penjualan
+### Get Buku Besar Pembantu Uang Muka Penjualan
 GET http://localhost/api/otomax/admin/get_buku_besar_pembantu_uang_muka_penjualan
 ?kode_reseller=OX0007
 
-### get_buku_besar_pembantu_komisi_penjualan
+### Get Buku Besar Pembantu Komisi Penjualan
 GET http://localhost/api/otomax/admin/get_buku_besar_pembantu_komisi_penjualan
 ?kode_reseller=OX0007
 
-### get_buku_besar_pembantu_uang_muka_pembelian
+### Get Buku Besar Pembantu Uang Muka Pembelian
 GET http://localhost/api/otomax/admin/get_buku_besar_pembantu_uang_muka_pembelian
 ?kode_supplier=304
 
-### get_penjualan_per_produk
+### Get Penjualan Per Produk
 GET http://localhost/api/otomax/admin/get_penjualan_per_produk
 ?kode_produk=AIGO5
 
-### get_penjualan_per_produk_per_reseller
+### Get Penjualan Per Produk Per Reseller
 GET http://localhost/api/otomax/admin/get_penjualan_per_produk_per_reseller
 ?kode_produk=AIGO5
 &kode_reseller=OX0007
 
-### get_pembelian_per_produk_per_supplier
+### Get Pembelian Per Produk Per Supplier
 GET http://localhost/api/otomax/admin/get_pembelian_per_produk_per_supplier
 ?kode_produk=AIGO5
 &kode_supplier=304
 
-### get_neraca_saldo
+### Get Neraca Saldo
 GET http://localhost/api/otomax/admin/get_neraca_saldo
 ?
 
-### get_laba_rugi
+### Get Laba Rugi
 GET http://localhost/api/otomax/admin/get_laba_rugi
 ?
 
-### get_neraca
+### Get Neraca
 GET http://localhost/api/otomax/admin/get_neraca
 ?
 
