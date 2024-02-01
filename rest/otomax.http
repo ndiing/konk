@@ -1,3 +1,12 @@
+### admin/reseller
+GET http://localhost/api/otomax/admin/reseller
+?page=1
+&limit=1
+
+
+
+
+
 ### Get Akun
 GET http://localhost/api/otomax/admin/get_akun
 ?
@@ -52,7 +61,8 @@ Content-Type: application/json
     "tanggal": "",
     "keterangan": "",
     "entri": [
-        {"kode_akun": "11010","debit": 1000000,"kredit": 0}
+        {"kode_akun": "15110","debit": 1000000,"kredit": 0,"kode_supplier":"305"},
+        {"kode_akun": "12010","debit": 0,"kredit": 1000000}
     ]
 }
 
