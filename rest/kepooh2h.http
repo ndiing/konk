@@ -35,3 +35,18 @@ GET http://localhost/api/kepooh2h/Guest/Product?produk=V
 ###
 GET http://localhost/api/kepooh2h/Guest/Product?produk=X
 
+###
+GET http://localhost/api/kepooh2h/Guest/Product
+?produk=E
+&produk=G
+&produk=GM
+&produk=I
+&produk=IG
+&produk=PLN
+&produk=PPOB
+&produk=SM
+&produk=S
+&produk=T
+&produk=V
+&produk=X
+
