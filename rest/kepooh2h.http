@@ -1,3 +1,37 @@
+
 ###
-GET http://localhost/api/kepooh2h/Guest/Product
-?produk=E
+GET http://localhost/api/kepooh2h/Guest/Product?produk=E
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=G
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=GM
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=I
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=IG
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=PLN
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=PPOB
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=SM
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=S
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=T
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=V
+
+###
+GET http://localhost/api/kepooh2h/Guest/Product?produk=X
+
